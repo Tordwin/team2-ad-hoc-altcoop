@@ -2,6 +2,9 @@
 -- Schema for U.S. & Canada Address Database
 -- Optimized for MySQL
 
+CREATE DATABASE IF NOT EXISTS addresses;
+USE addresses;
+
 CREATE TABLE `addresses` (
     `zipcode`    VARCHAR(10)  NOT NULL,
     `number`     VARCHAR(30)  NOT NULL,
