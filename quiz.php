@@ -11,80 +11,177 @@
             <input type="text" name="email" required><br><br>
 
             <label>Major</label><br>
-            <input type="text" name="major" required><br><br>
+            <input type="radio" name="major_1_1" value="HCC"> Human-Centered Computing
+            <input type="radio" name="major_1_1" value="W&M"> Web And Mobile
+            <input type="radio" name="major_1_1" value="CIT"> Computing And Information Technology
+            <input type="radio" name="major_1_1" value="other"> Other
+            <!-- The creation of a script needs to be done here for other textbox to appear -->
+            </select><br><br>
 
-            <label>Course ID</label><br>
-            <input type="text" name="course_id" required><br><br>
+            <label>Course ID: </label>
+            <select>
+                <option value="">Select your Course ID</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br><br>
 
             <label>Date</label><br>
             <input type="date" name="date" required><br><br>
 
-            <h3>Open Ended Questions</h3>
-
-            <label>How well is your front-end development skills?</label><br>
-            <input type="radio" name="open_ended_1_1" value="Beginner"> Beginner
-            <input type="radio" name="open_ended_1_2" value="Intermediate"> Intermediate
-            <input type="radio" name="open_ended_1_3" value="Advanced"> Advanced<br><br>
-            
-            <label>How well is your back-end development skills?</label><br>
-            <input type="radio" name="open_ended_2_1" value="Beginner"> Beginner
-            <input type="radio" name="open_ended_2_2" value="Intermediate"> Intermediate
-            <input type="radio" name="open_ended_2_3" value="Advanced"> Advanced<br><br>
-
-
-            <label>How well is your GUI development skills?</label><br>
-            <input type="radio" name="open_ended_3_1" value="Beginner"> Beginner
-            <input type="radio" name="open_ended_3_2" value="Intermediate"> Intermediate
-            <input type="radio" name="open_ended_3_3" value="Advanced"> Advanced<br><br>
-
-            <label>How well is your UX/UI design skills?</label><br>
-            <input type="radio" name="open_ended_4_1" value="Beginner"> Beginner
-            <input type="radio" name="open_ended_4_2" value="Intermediate"> Intermediate
-            <input type="radio" name="open_ended_4_3" value="Advanced"> Advanced<br><br>
-
-            <label>How well is your database development skills?</label><br>
-            <input type="radio" name="open_ended_5_1" value="Beginner"> Beginner
-            <input type="radio" name="open_ended_5_2" value="Intermediate"> Intermediate
-            <input type="radio" name="open_ended_5_3" value="Advanced"> Advanced<br><br>
+            <!----------- BEGINNING OF FRONT-END QUESTIONS ------------>
 
             <h3>Front-End</h3>
 
+            <label>How well is your front-end development skills?</label><br>
+            <input type="radio" name="front_end_1_1" value="Beginner"> Beginner
+            <input type="radio" name="front_end_1_2" value="Intermediate"> Intermediate
+            <input type="radio" name="front_end_1_3" value="Advanced"> Advanced<br><br>
+            
+            <label>How comfortable are you in utilizing HTML and CSS in the creation of a web page</label><br>
+            <input type="radio" name="front_end_2_1" value="Beginner"> Beginner
+            <input type="radio" name="front_end_2_2" value="Intermediate"> Intermediate
+            <input type="radio" name="front_end_2_3" value="Advanced"> Advanced<br><br>
+
+            <label>How comfortable are you in the creation of JavaScript scripts?</label><br>
+            <input type="radio" name="front_end_3_1" value="Beginner"> Beginner
+            <input type="radio" name="front_end_3_2" value="Intermediate"> Intermediate
+            <input type="radio" name="front_end_3_3" value="Advanced"> Advanced<br><br>
+
+            <label>How comfortable are you with creating pages in PHP</label><br>
+            <input type="radio" name="front_end_4_1" value="Beginner"> Beginner
+            <input type="radio" name="front_end_4_2" value="Intermediate"> Intermediate
+            <input type="radio" name="front_end_4_3" value="Advanced"> Advanced<br><br>
+
+            <label>How comfortable are you with creating and processing interactable elements on a web page? (Data submissions, quizzes, drop downs, and menus)</label><br>
+            <input type="radio" name="front_end_5_1" value="Beginner"> Beginner
+            <input type="radio" name="front_end_5_2" value="Intermediate"> Intermediate
+            <input type="radio" name="front_end_5_3" value="Advanced"> Advanced<br><br>
+            
+            <!----------- END OF FRONT-END QUESTIONS ------------------>
+
+            <!----------- BEGINNING OF BACK-END QUESTIONS ------------->
+
             <h3>Back-End</h3>
+            
+            <label>How well is your back-end development skills?</label><br>
+            <input type="radio" name="back_end_1_1" value="Beginner"> Beginner
+            <input type="radio" name="back_end_1_2" value="Intermediate"> Intermediate
+            <input type="radio" name="back_end_1_3" value="Advanced"> Advanced<br><br>
 
-            <h3>GUI Development</h3>
+            <label>How comfortable are you with creating a database from provided data?</label><br>
+            <input type="radio" name="back_end_2_1" value="Beginner"> Beginner
+            <input type="radio" name="back_end_2_2" value="Intermediate"> Intermediate
+            <input type="radio" name="back_end_2_3" value="Advanced"> Advanced<br><br>
+
+            <label>How comfortable are you with loading and manipulating databases?</label><br>
+            <input type="radio" name="back_end_3_1" value="Beginner"> Beginner
+            <input type="radio" name="back_end_3_2" value="Intermediate"> Intermediate
+            <input type="radio" name="back_end_3_3" value="Advanced"> Advanced<br><br>
+
+            <label>How is your bug detection skills?</label><br>
+            <input type="radio" name="back_end_4_1" value="Beginner"> Beginner
+            <input type="radio" name="back_end_4_2" value="Intermediate"> Intermediate
+            <input type="radio" name="back_end_4_3" value="Advanced"> Advanced<br><br>
+
+            <label>How well is your database development skills?</label><br>
+            <input type="radio" name="back_end_5_1" value="Beginner"> Beginner
+            <input type="radio" name="back_end_5_2" value="Intermediate"> Intermediate
+            <input type="radio" name="back_end_5_3" value="Advanced"> Advanced<br><br>
+
+
+            <!----------- END OF BACK-END QUESTIONS ------------------->
+
+            <!----------- BEGINNING OF GUI QUESTIONS ------------------>
+
+            <h3>GUI</h3>
+
+            <label>How well is your GUI development skills?</label><br>
+            <input type="radio" name="gui_1_1" value="Beginner"> Beginner
+            <input type="radio" name="gui_1_2" value="Intermediate"> Intermediate
+            <input type="radio" name="gui_1_3" value="Advanced"> Advanced<br><br>
+
             <label>How would you rate your skills in GUI development?</label><br>
-            <input type="radio" name="gui_1_1" value="Weakest"> Weakest
-            <input type="radio" name="gui_1_2" value="Weak"> Weak
-            <input type="radio" name="gui_1_3" value="Neutral"> Neutral
-            <input type="radio" name="gui_1_4" value="Strong"> Strong
-            <input type="radio" name="gui_1_5" value="Strongest"> Strongest<br><br>
+            <input type="radio" name="gui_2_1" value="Weakest"> Weakest
+            <input type="radio" name="gui_2_2" value="Weak"> Weak
+            <input type="radio" name="gui_2_3" value="Neutral"> Neutral
+            <input type="radio" name="gui_2_4" value="Strong"> Strong
+            <input type="radio" name="gui_2_5" value="Strongest"> Strongest<br><br>
 
-            <h3>UX/UI Design</h3>
-            <label>How would you rate your skills in UX/UI design?</label><br>
-            <input type="radio" name="uxui_1_1" value="Weakest"> Weakest
-            <input type="radio" name="uxui_1_2" value="Weak"> Weak
-            <input type="radio" name="uxui_1_3" value="Neutral"> Neutral
-            <input type="radio" name="uxui_1_4" value="Strong"> Strong
-            <input type="radio" name="uxui_1_5" value="Strongest"> Strongest<br><br>
+            <!----------- END OF GUI QUESTIONS ------------------------>
 
-            <h3>Database Development</h3>
-            <label>How would you rate your skills in database development?</label><br>
-            <input type="radio" name="database_1_1" value="Weakest"> Weakest
-            <input type="radio" name="database_1_2" value="Weak"> Weak
-            <input type="radio" name="database_1_3" value="Neutral"> Neutral
-            <input type="radio" name="database_1_4" value="Strong"> Strong
-            <input type="radio" name="database_1_5" value="Strongest"> Strongest<br><br>
+            <!----------- BEGINNING OF UX/UI QUESTIONS ---------------->
 
-            <label>How well can you write code that interacts with a database?</label><br>
-            <input type="radio" name="database_2_1" value="Weakest"> Weakest
-            <input type="radio" name="database_2_2" value="Weak"> Weak
-            <input type="radio" name="database_2_3" value="Neutral"> Neutral
-            <input type="radio" name="database_2_4" value="Strong"> Strong
-            <input type="radio" name="database_2_5" value="Strongest"> Strongest<br><br>
+            <h3>UX/UI</h3>
 
-            <h3>Soft Skills</h3>
+            <label>How well is your UX/UI design skills?</label><br>
+            <input type="radio" name="uxui_1_1" value="Beginner"> Beginner
+            <input type="radio" name="uxui_1_2" value="Intermediate"> Intermediate
+            <input type="radio" name="uxui_1_3" value="Advanced"> Advanced<br><br>
+
+            <label>How comfortable are you with wire framing and prototyping?</label><br>
+            <input type="radio" name="uxui_2_1" value="Beginner"> Beginner
+            <input type="radio" name="uxui_2_2" value="Intermediate"> Intermediate
+            <input type="radio" name="uxui_2_3" value="Advanced"> Advanced<br><br>
+
+            <label>How comfortable are you with usability testing?</label><br>
+            <input type="radio" name="uxui_3_1" value="Beginner"> Beginner
+            <input type="radio" name="uxui_3_2" value="Intermediate"> Intermediate
+            <input type="radio" name="uxui_3_3" value="Advanced"> Advanced<br><br>
+
+            <label>How comfortable are you with user interviews?</label><br>
+            <input type="radio" name="uxui_4_1" value="Beginner"> Beginner
+            <input type="radio" name="uxui_4_2" value="Intermediate"> Intermediate
+            <input type="radio" name="uxui_4_3" value="Advanced"> Advanced<br><br>
+
+            <label>How comfortable are you with UI design?</label><br>
+            <input type="radio" name="uxui_5_1" value="Beginner"> Beginner
+            <input type="radio" name="uxui_5_2" value="Intermediate"> Intermediate
+            <input type="radio" name="uxui_5_3" value="Advanced"> Advanced<br><br>
+
+            <!----------- END OF UX/UI QUESTIONS --------------------->
+
+            <!----------- BEGINNING OF APP DEVELOPMENT QUESTIONS ----->
+
+            <h1>App Development</h1>
+            
+            <label>How well is your app development?</label>
+            <input type="radio" name="app_dev_1_1" value="Beginner"> Beginner
+            <input type="radio" name="app_dev_1_2" value="Intermediate"> Intermediate
+            <input type="radio" name="app_dev_1_3" value="Advanced"> Advanced<br><br>
+
+            <label>How comfortable are you in development of an Apple application? (Swift)</label>
+            <input type="radio" name="app_dev_2_1" value="Beginner"> Beginner
+            <input type="radio" name="app_dev_2_2" value="Intermediate"> Intermediate
+            <input type="radio" name="app_dev_2_3" value="Advanced"> Advanced<br><br>
+
+            <label>How comfortable are you in development of a Samsung application? (Kotlin)</label>
+            <input type="radio" name="app_dev_3_1" value="Beginner"> Beginner
+            <input type="radio" name="app_dev_3_2" value="Intermediate"> Intermediate
+            <input type="radio" name="app_dev_3_3" value="Advanced"> Advanced<br><br>
+
+            <label>How comfortable are you developing a cross-platform mobile application for both Samsung and Apple? (Dart via Flutter)</label>
+            <input type="radio" name="app_dev_4_1" value="Beginner"> Beginner
+            <input type="radio" name="app_dev_4_2" value="Intermediate"> Intermediate
+            <input type="radio" name="app_dev_4_3" value="Advanced"> Advanced<br><br>
+
+            <label>How comfortable are you in developing a web application?</label>
+            <input type="radio" name="app_dev_5_1" value="Beginner"> Beginner
+            <input type="radio" name="app_dev_5_2" value="Intermediate"> Intermediate
+            <input type="radio" name="app_dev_5_3" value="Advanced"> Advanced<br><br>
+
+            <!----------- END OF APP DEVELOPMENT QUESTIONS ----------->
+
+            <!------------- BEGINNING OF SOFT SKILLS QUESTIONS ------->
+
+            <h2>Soft Skills</h2>
+
+            <!------------- END OF SOFT SKILLS QUESTIONS ----------->
+
+            <!------- BEGINNING OF LEADERSHIP SKILLS QUESTIONS ------->
 
             <h3>Leadership Skills</h3>
+
             <label>I feel comfortable delivering presentations in front of people.</label><br>
             <input type="radio" name="leadership_1_1" value="Strongly Disagree"> Strongly Disagree
             <input type="radio" name="leadership_1_2" value="Disagree"> Disagree
@@ -92,6 +189,9 @@
             <input type="radio" name="leadership_1_4" value="Agree"> Agree
             <input type="radio" name="leadership_1_5" value="Strongly Agree"> Strongly Agree<br><br>
 
+            <!------- END OF LEADERSHIP SKILLS QUESTIONS ------------->
+
+            <!------------- BEGINNING OF PERSONALITY QUESTIONS ------->
             <label>I feel that I can effectively solve a problem utilizing my skill-set.</label><br>
             <input type="radio" name="leadership_2_1" value="Strongly Disagree"> Strongly Disagree
             <input type="radio" name="leadership_2_2" value="Disagree"> Disagree
@@ -102,7 +202,12 @@
             <label>Have you had any unique experience in internships that you would like to bring to the team?</label><br>
             <textarea name="leadership_3" rows="4" cols="50"></textarea><br><br>
 
+            <!------------- END OF PERSONALITY QUESTIONS ------------->
+
+            <!------------- BEGINNING OF LANGUAGES CHECKBOXES -------->
+
             <h3>Languages</h3>
+
             <label>Please select languages you are proficient in.</label><br>
             <input type="checkbox" name="languages" value="python"> Python<br>
             <input type="checkbox" name="languages" value="java"> Java<br>
@@ -114,6 +219,8 @@
             <input type="checkbox" name="languages" value="html"> HTML<br>
             <input type="checkbox" name="languages" value="css"> CSS<br>
             <input type="checkbox" name="languages" value="sql"> SQL<br>
+
+            <!------------- END OF LANGUAGES CHECKBOXES -------------->
         </form>
     </body>
 </html>
