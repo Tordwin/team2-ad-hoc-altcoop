@@ -1,0 +1,22 @@
+body{
+    background-color: #F4A75A;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section{
+    background-color: white;
+    padding: 3em;
+    margin: 2em;
+    border-radius: 1em;
+}
+
+input{
+    background-color: #FFEDCA;
+    border: #FFEDCA;
+    border-radius: .5em;
+    padding: 5px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    accent-color: #EA8E33;
+}
