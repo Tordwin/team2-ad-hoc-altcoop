@@ -25,13 +25,18 @@ def sqlite_convert(filepath):
     cursor = conn.cursor()
 
     # IMPORTANT - This variable determines how many segments this will output
-    # parts_count = 3
-    # rows_per_file = get_rows_per_file(parts_count, cursor)
+    parts_count = 3
+    rows_per_file = get_rows_per_file(parts_count, cursor)
 
     cursor.execute("SELECT * FROM addresses")   
 
     column_names = [name[0] for name in cursor.description]
-    print(column_names)
+
+    part = 1
+    rows_total = 0
+    file_count = 0
+    writer = None
+    f = None
     # Stopped temporarily here - issues with sqlite file
 
 
