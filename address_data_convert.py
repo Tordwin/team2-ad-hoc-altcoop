@@ -1,4 +1,3 @@
-# Install mysql.connector (pip install mysql-connector-python)
 # import csv, sqlite3, and math
 # (math is just to divide the biggest file into an even-ish # of parts)
 
@@ -10,7 +9,7 @@ def get_sqlite_path():
     filepath = input("Enter the absolute path to your SQLite file: ")
     return filepath
 
-    # This is gonna determine 1/3 of the original file, so that it can split the data more easily
+    # This is gonna determine 1/n of the original file, where n is the parts_count variable, so that it can split the data more easily
 def get_rows_per_file(parts_count, cursor):
     cursor.execute("SELECT COUNT(*) FROM addresses")
     rows_count = cursor.fetchone()[0]
@@ -33,7 +32,7 @@ def sqlite_convert(filepath):
     part = 1
     rows_total = 0
     writer = None
-    f = None
+    file = None
     
     while True:
         rows = cursor.fetchmany(100000)  # IMPORTANT: This value is the batch size for fetching rows; change if needed
@@ -43,11 +42,11 @@ def sqlite_convert(filepath):
         for row in rows:
             # Opens a new file if needed
             if rows_total == 0:
-                if f:  # Closes the old file if writing to a new one
-                    f.close()
+                if file:  # Closes the old file if writing to a new one
+                    file.close()
                 filename = f"addresses_part{part}.csv"
-                f = open(filename, "w", newline="", encoding="utf-8")
-                writer = csv.writer(f)
+                file = open(filename, "w", newline="", encoding="utf-8")
+                writer = csv.writer(file)
                 writer.writerow(column_names) 
                 print(f"Writing {filename}...")
 
@@ -61,8 +60,8 @@ def sqlite_convert(filepath):
                 part += 1
 
     # Closes the last file
-    if f:
-        f.close()
+    if file:
+        file.close()
 
     conn.close()
     print("Done converting to .csv!")
