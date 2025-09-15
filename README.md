@@ -36,7 +36,7 @@ Install dependencies:
 ```bash
 pip install pandas mysql-connector-python
 ```
-# Usage
+### Usage
 
 Run the script with the CSV file you want to import:
 ```python
