@@ -21,3 +21,18 @@ To load the schema into MySQL:
 
 ```bash
 mysql -u <user> -p < addresses.sql
+```
+
+## CSV to MySQL Import Script
+
+This script imports rows from a CSV file into a MySQL database table.
+
+## Requirements
+- Python 3
+- [pandas](https://pandas.pydata.org/)  
+- [mysql-connector-python](https://pypi.org/project/mysql-connector-python/)
+
+Install dependencies:
+```bash
+pip install pandas mysql-connector-python
+```
