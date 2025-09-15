@@ -1,8 +1,6 @@
-# Ensure both Pandas and SQLAlchemy are installed
 # Install mysql.connector (pip install mysql-connector-python)
-# import pandas as pd
-# import sqlalchemy as al
-# import mysql.connector as sqlconn
+# import csv, sqlite3, and math
+# (math is just to divide the biggest file into an even-ish # of parts)
 
 import csv
 import sqlite3
@@ -34,10 +32,40 @@ def sqlite_convert(filepath):
 
     part = 1
     rows_total = 0
-    file_count = 0
     writer = None
     f = None
-    # Stopped temporarily here - issues with sqlite file
+    
+    while True:
+        rows = cursor.fetchmany(100000)  # IMPORTANT: This value is the batch size for fetching rows; change if needed
+        if not rows:
+            break
+
+        for row in rows:
+            # Open a new file if needed
+            if rows_total == 0:
+                if f:  # Closes the old file if writing to a new one
+                    f.close()
+                filename = f"addresses_part{part}.csv"
+                f = open(filename, "w", newline="", encoding="utf-8")
+                writer = csv.writer(f)
+                writer.writerow(column_names) 
+                print(f"Writing {filename}...")
+
+            writer.writerow(row)
+            rows_total += 1
+
+            # This little if statement here checks if it's time to switch to a new file
+            # (i.e. if the rows_total is larger than the intended row count per file)
+            if rows_total >= rows_per_file and part < parts_count:
+                rows_total = 0
+                part += 1
+
+# Close last file
+    if f:
+        f.close()
+
+    conn.close()
+    print("Done.")
 
 
 def main():
