@@ -36,3 +36,13 @@ Install dependencies:
 ```bash
 pip install pandas mysql-connector-python
 ```
+### Usage
+
+Run the script with the CSV file you want to import:
+```python
+python csv_to_mysql.py addresses_part1.csv
+python csv_to_mysql.py addresses_part2.csv
+python csv_to_mysql.py addresses_part3.csv
+```
+
+If successful, you’ll see how many rows were inserted.
