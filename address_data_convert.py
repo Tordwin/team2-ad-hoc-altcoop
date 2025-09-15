@@ -22,7 +22,7 @@ def sqlite_convert(filepath):
     conn = sqlite3.connect(filepath)
     cursor = conn.cursor()
 
-    # IMPORTANT - This variable determines how many segments this will output
+    # IMPORTANT: This variable determines how many segments this will output
     parts_count = 3
     rows_per_file = get_rows_per_file(parts_count, cursor)
 
@@ -41,7 +41,7 @@ def sqlite_convert(filepath):
             break
 
         for row in rows:
-            # Open a new file if needed
+            # Opens a new file if needed
             if rows_total == 0:
                 if f:  # Closes the old file if writing to a new one
                     f.close()
@@ -60,12 +60,12 @@ def sqlite_convert(filepath):
                 rows_total = 0
                 part += 1
 
-# Close last file
+    # Closes the last file
     if f:
         f.close()
 
     conn.close()
-    print("Done.")
+    print("Done converting to .csv!")
 
 
 def main():
