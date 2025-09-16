@@ -223,20 +223,48 @@
                 <hr>
 
                 <label>Please select the software you are familiar with:</label><br>
-                <input type="checkbox" name="software_app" value="git">Git
-                <input type="checkbox" name="software_app" value="docker">Docker
-                <input type="checkbox" name="software_app" value="vs">Visual Studio
-                <input type="checkbox" name="software_app" value="vscode">Visual Studio Code
-                <input type="checkbox" name="software_app" value="mysql_workbench">MySQL Workbench<br>
-                <input type="checkbox" name="software_app" value="mac">Mac OS
-                <input type="checkbox" name="software_app" value="linux">Linux OS
-                <input type="checkbox" name="software_app" value="windows">Windows OS
-                <input type="checkbox" name="software_app" value="mobile">Mobile OS (Android, IOS)<br>
-                <input type="checkbox" name="software_app" value="jira">Jira
-                <input type="checkbox" name="software_app" value="azure">Azure
-                <input type="checkbox" name="software_app" value="slack">Slack
-                <input type="checkbox" name="software_app" value="trello">Trello
-                <input type="checkbox" name="software_app" value="microsoft_teams">Microsoft Teams<br>
+                <span>
+                    <input type="checkbox" name="software_app" value="git"><br>Git
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="docker"><br>Docker
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="vs"><br>Visual Studio
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="vscode"><br>Visual Studio Code
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="mysql_workbench"><br>MySQL Workbench<br>
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="mac"><br>Mac OS
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="linux"><br>Linux OS
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="windows"><br>Windows OS
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="mobile"><br>Mobile OS (Android, IOS)<br>
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="jira"><br>Jira
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="azure"><br>Azure
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="slack"><br>Slack
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="trello"><br>Trello
+                </span>
+                <span>
+                    <input type="checkbox" name="software_app" value="microsoft_teams"><br>Microsoft Teams<br>
+                </span>
             </section>
 
             <!--------- END OF SOFTWARE CHECKBOXES ------------------->

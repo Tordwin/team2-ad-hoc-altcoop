@@ -17,7 +17,7 @@ input{
     padding: 5px;
 }
 
-input[type="radio"], input[type="checkbox"]{
+input[type="radio"]{
     accent-color: #EA8E33;
 }
 
@@ -29,4 +29,50 @@ hr{
     height: 3px;
     background-color: #fce1c7;
     border: 0px;
+}
+
+input[type="checkbox"]{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #EA8E33;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    appearance: none;
+}
+
+span{
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
+
+button[type="submit"]{
+    padding: 2em;
+    width: 30%;
+    background-color: #fce1c7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 1em;
+    border-style: none;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+th{
+    padding: .5em;
+    text-align: center;
+}
+
+td input{
+    display: block;
+    margin: auto;
 }
