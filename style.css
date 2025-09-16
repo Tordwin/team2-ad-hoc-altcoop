@@ -5,7 +5,7 @@ body{
 
 section{
     background-color: white;
-    padding: 3em;
+    padding: 2em;
     margin: 2em;
     border-radius: 1em;
 }
@@ -19,4 +19,14 @@ input{
 
 input[type="radio"], input[type="checkbox"]{
     accent-color: #EA8E33;
+}
+
+label{
+    font-weight: bold;
+}
+
+hr{
+    height: 3px;
+    background-color: #fce1c7;
+    border: 0px;
 }

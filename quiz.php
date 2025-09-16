@@ -6,6 +6,12 @@
     <body>
         <form method="POST">
             <section>
+                <h1>Self-Assessment Web-Form</h1>
+                <p>This survey is a self-assessment of both your technical and soft skills. 
+                    Please answer honestly, as your responses will help us create well-balanced teams. 
+                    Remember, claiming expertise in an area you’re not prepared for can make collaboration 
+                    more difficult and ultimately hurt your team’s success.</p>
+                    <hr>
                 <label>Name</label><br>
                 <input type="text" name="name" required><br><br>
 
@@ -36,6 +42,7 @@
 
             <section>
                 <h3>Front-End</h3>
+                <hr>
 
                 <label>How well is your front-end development skills?</label><br>
                 <input type="radio" name="front_end_1_1" value="Beginner"> Beginner
@@ -69,6 +76,7 @@
 
             <section>
                 <h3>Back-End</h3>
+                <hr>
                 
                 <label>How well is your back-end development skills?</label><br>
                 <input type="radio" name="back_end_1_1" value="Beginner"> Beginner
@@ -102,6 +110,7 @@
 
             <section>
                 <h3>GUI</h3>
+                <hr>
 
                 <label>How well is your GUI development skills?</label><br>
                 <input type="radio" name="gui_1_1" value="Beginner"> Beginner
@@ -122,6 +131,7 @@
 
             <section>
                 <h3>UX/UI</h3>
+                <hr>
 
                 <label>How well is your UX/UI design skills?</label><br>
                 <input type="radio" name="uxui_1_1" value="Beginner"> Beginner
@@ -155,28 +165,29 @@
 
             <section>
                 <h1>App Development</h1>
+                <hr>
                 
-                <label>How well is your app development?</label>
+                <label>How well is your app development?</label><br>
                 <input type="radio" name="app_dev_1_1" value="Beginner"> Beginner
                 <input type="radio" name="app_dev_1_2" value="Intermediate"> Intermediate
                 <input type="radio" name="app_dev_1_3" value="Advanced"> Advanced<br><br>
 
-                <label>How comfortable are you in development of an Apple application? (Swift)</label>
+                <label>How comfortable are you in development of an Apple application? (Swift)</label> <br>
                 <input type="radio" name="app_dev_2_1" value="Beginner"> Beginner
                 <input type="radio" name="app_dev_2_2" value="Intermediate"> Intermediate
                 <input type="radio" name="app_dev_2_3" value="Advanced"> Advanced<br><br>
 
-                <label>How comfortable are you in development of a Samsung application? (Kotlin)</label>
+                <label>How comfortable are you in development of a Samsung application? (Kotlin)</label><br>
                 <input type="radio" name="app_dev_3_1" value="Beginner"> Beginner
                 <input type="radio" name="app_dev_3_2" value="Intermediate"> Intermediate
                 <input type="radio" name="app_dev_3_3" value="Advanced"> Advanced<br><br>
 
-                <label>How comfortable are you developing a cross-platform mobile application for both Samsung and Apple? (Dart via Flutter)</label>
+                <label>How comfortable are you developing a cross-platform mobile application for both Samsung and Apple? (Dart via Flutter)</label><br>
                 <input type="radio" name="app_dev_4_1" value="Beginner"> Beginner
                 <input type="radio" name="app_dev_4_2" value="Intermediate"> Intermediate
                 <input type="radio" name="app_dev_4_3" value="Advanced"> Advanced<br><br>
 
-                <label>How comfortable are you in developing a web application?</label>
+                <label>How comfortable are you in developing a web application?</label><br>
                 <input type="radio" name="app_dev_5_1" value="Beginner"> Beginner
                 <input type="radio" name="app_dev_5_2" value="Intermediate"> Intermediate
                 <input type="radio" name="app_dev_5_3" value="Advanced"> Advanced<br><br>
@@ -188,6 +199,7 @@
 
             <section>
                 <h2>Soft Skills</h2>
+                <hr>
             </section>
 
             <!------------- END OF SOFT SKILLS QUESTIONS ----------->
@@ -196,6 +208,7 @@
 
             <section>
                 <h3>Leadership Skills</h3>
+                <hr>
 
                 <label>I feel comfortable delivering presentations in front of people.</label><br>
                 <input type="radio" name="leadership_1_1" value="Strongly Disagree"> Strongly Disagree
@@ -209,6 +222,7 @@
 
             <!------------- BEGINNING OF PERSONALITY QUESTIONS ------->
             <section>
+                <hr>
                 <label>I feel that I can effectively solve a problem utilizing my skill-set.</label><br>
                 <input type="radio" name="leadership_2_1" value="Strongly Disagree"> Strongly Disagree
                 <input type="radio" name="leadership_2_2" value="Disagree"> Disagree
@@ -226,6 +240,7 @@
 
             <section>
                 <h3>Languages</h3>
+                <hr>
 
                 <label>Please select languages you are proficient in.</label><br>
                 <input type="checkbox" name="languages" value="python"> Python<br>
