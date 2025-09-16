@@ -46,3 +46,20 @@ python csv_to_mysql.py addresses_part3.csv
 ```
 
 If successful, you’ll see how many rows were inserted.
+
+## Senior Development Self-Assessment Web Form
+
+This repository also includes a self-assessment web form built with HTML/PHP to gather technical, leadership, and soft skills data from students in the Senior Development Course.
+
+## Features
+- Collects personal information: Preferred name, email, major, section #, and date
+- Language proficiency in: HTML, CSS, Python, JavaScript, Java, etc.
+- Software proficiency in: Git, Docker, Jira, Azure, etc.
+- Front, Back-End, GUI, UX/UI development skills assessment
+- Personality, soft skills, and leadership questions
+
+## Requirements
+- PHP or HTML
+- Adminer (Not Implemented Yet)
+- PHP Server (VS Code Extension)
+- Live Server (VS Code Extension)
