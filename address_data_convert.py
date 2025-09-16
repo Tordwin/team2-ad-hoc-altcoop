@@ -1,8 +1,5 @@
-# Ensure both Pandas and SQLAlchemy are installed
-# Install mysql.connector (pip install mysql-connector-python)
-# import pandas as pd
-# import sqlalchemy as al
-# import mysql.connector as sqlconn
+# import csv, sqlite3, and math
+# (math is just to divide the biggest file into an even-ish # of parts)
 
 import csv
 import sqlite3
@@ -12,7 +9,7 @@ def get_sqlite_path():
     filepath = input("Enter the absolute path to your SQLite file: ")
     return filepath
 
-    # This is gonna determine 1/3 of the original file, so that it can split the data more easily
+    # This is gonna determine 1/n of the original file, where n is the parts_count variable, so that it can split the data more easily
 def get_rows_per_file(parts_count, cursor):
     cursor.execute("SELECT COUNT(*) FROM addresses")
     rows_count = cursor.fetchone()[0]
@@ -24,7 +21,7 @@ def sqlite_convert(filepath):
     conn = sqlite3.connect(filepath)
     cursor = conn.cursor()
 
-    # IMPORTANT - This variable determines how many segments this will output
+    # IMPORTANT: This variable determines how many segments this will output
     parts_count = 3
     rows_per_file = get_rows_per_file(parts_count, cursor)
 
@@ -34,10 +31,40 @@ def sqlite_convert(filepath):
 
     part = 1
     rows_total = 0
-    file_count = 0
     writer = None
-    f = None
-    # Stopped temporarily here - issues with sqlite file
+    file = None
+    
+    while True:
+        rows = cursor.fetchmany(100000)  # IMPORTANT: This value is the batch size for fetching rows; change if needed
+        if not rows:
+            break
+
+        for row in rows:
+            # Opens a new file if needed
+            if rows_total == 0:
+                if file:  # Closes the old file if writing to a new one
+                    file.close()
+                filename = f"addresses_part{part}.csv"
+                file = open(filename, "w", newline="", encoding="utf-8")
+                writer = csv.writer(file)
+                writer.writerow(column_names) 
+                print(f"Writing {filename}...")
+
+            writer.writerow(row)
+            rows_total += 1
+
+            # This little if statement here checks if it's time to switch to a new file
+            # (i.e. if the rows_total is larger than the intended row count per file)
+            if rows_total >= rows_per_file and part < parts_count:
+                rows_total = 0
+                part += 1
+
+    # Closes the last file
+    if file:
+        file.close()
+
+    conn.close()
+    print("Done converting to .csv!")
 
 
 def main():
