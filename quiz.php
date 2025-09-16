@@ -14,13 +14,13 @@
                 </p>
                 <p style="color: red;">* Indicates Required Questions</p>
                 <hr>
-                <label>Preferred Name: *</label><br>
+                <label>Preferred Name: <span style="color: red;">*</span></label><br>
                 <input type="text" name="name" required><br><br>
 
-                <label>Email: *</label><br>
+                <label>Email: <span style="color: red;">*</span></label><br>
                 <input type="text" name="email" required><br><br>
 
-                <label>Major: *</label><br>
+                <label>Major: <span style="color: red;">*</span></label><br>
                 <input type="radio" name="major_1_1" value="W&M"> Web And Mobile (WMC)
                 <input type="radio" name="major_1_2" value="HCC"> Human-Centered Computing (HCC)
                 <input type="radio" name="major_1_3" value="CIT"> Computing And Information Technology (CIT)
@@ -28,7 +28,7 @@
                 <!-- The creation of a script needs to be done here for other textbox to appear -->
                 </select><br><br>
 
-                <label>Section #: </label>
+                <label>Section #: <span style="color: red;">*</span></label>
                 <select>
                     <option value="">Select your Section #</option>
                     <option value="1">1</option>
@@ -36,7 +36,7 @@
                     <option value="3">3</option>
                 </select><br><br>
 
-                <label>Date</label><br>
+                <label>Date <span style="color: red;">*</span></label><br>
                 <input type="date" name="date" required><br><br>
             </section>
 
