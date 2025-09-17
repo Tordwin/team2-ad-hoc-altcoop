@@ -16,7 +16,7 @@ CREATE TABLE `addresses` (
     `country`    CHAR(2)      NOT NULL DEFAULT 'US',
     `latitude`   DECIMAL(9,6) NOT NULL,
     `longitude`  DECIMAL(9,6) NOT NULL,
-    `source`     VARCHAR(50)  DEFAULT NULL,
+    `source`     VARCHAR(255)  DEFAULT NULL,
     UNIQUE KEY `uniq_address` (`zipcode`, `number`, `street`, `street2`, `country`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
