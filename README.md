@@ -25,27 +25,44 @@ mysql -u <user> -p < addresses.sql
 
 ## CSV to MySQL Import Script
 
-This script imports rows from a CSV file into a MySQL database table.
+**A simple Python script to import a CSV file into an existing MySQL table.**
 
-## Requirements
-- Python 3
-- [pandas](https://pandas.pydata.org/)  
-- [mysql-connector-python](https://pypi.org/project/mysql-connector-python/)
+This script does **not** create or drop tables—it only inserts data. It handles `NaN` values and processes rows in batches to avoid memory issues.
 
-Install dependencies:
+---
+
+### Features
+
+- Insert CSV data into an **existing MySQL table**  
+- Handles `NaN` / `'nan'` values automatically  
+- Inserts rows in batches to improve performance  
+- Shows progress of insertion for large CSVs  
+
+---
+
+### Requirements
+
+- Python 3.7+  
+- MySQL server running locally or remotely  
+- Python packages:
+
 ```bash
 pip install pandas mysql-connector-python
 ```
+
 ### Usage
-
-Run the script with the CSV file you want to import:
+1. Open a terminal or command prompt.
+2. Navigate to the folder containing csv_to_mysql.py.
+3. Run the script:
 ```python
-python csv_to_mysql.py addresses_part1.csv
-python csv_to_mysql.py addresses_part2.csv
-python csv_to_mysql.py addresses_part3.csv
+python csv_to_mysql.py
 ```
-
-If successful, you’ll see how many rows were inserted.
+4. You will be prompted for the following:
+  - MySQL username: Your database username (e.g., root)
+  - MySQL password: Your database password
+  - MySQL database name: The database to insert data into
+  - MySQL table name: The table to insert data into (must already exist)
+  - CSV file path: Full path to the CSV file
 
 ## Senior Development Self-Assessment Web Form
 
