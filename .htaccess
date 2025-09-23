@@ -7,3 +7,10 @@ php_flag html_errors on
 # # enable PHP error logging
 php_flag log_errors on
 php_value error_log /home/iste498t01/logs/php_error_log
+
+# RIT Authentication
+ShibRedirectToSSL 443 
+AuthType shibboleth 
+ShibRequireSession on
+require shib-attr ritEduAffiliation Student
+require shib-attr ritEduAffiliation Employee
