@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form method="POST">
+        <form method="POST" action="submit.php">
             <section>
                 <h1>Self-Assessment Web-Form</h1>
                 <p>This survey is a self-assessment of both your technical and soft skills. 
