@@ -8,6 +8,8 @@ php_flag html_errors on
 php_flag log_errors on
 php_value error_log /home/iste498t01/logs/php_error_log
 
+
+# DO NOT MOVE THE BELOW TO THE SERVER UNTIL FIXED (BROKEN CODE BELOW)
 # RIT Authentication
 ShibRedirectToSSL 443 
 AuthType shibboleth 
