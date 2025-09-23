@@ -77,6 +77,6 @@ This repository also includes a self-assessment web form built with HTML/PHP to 
 
 ## Requirements
 - PHP or HTML
-- Adminer (Not Implemented Yet)
+- Adminer (user='iste498t01' | password='Gras4@overlap')
 - PHP Server (VS Code Extension)
 - Live Server (VS Code Extension)
