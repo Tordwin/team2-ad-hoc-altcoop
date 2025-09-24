@@ -14,3 +14,4 @@ php_value error_log /home/iste498t01/logs/php_error_log
 ShibRedirectToSSL 443 
 AuthType shibboleth 
 ShibRequireSession on
+require user ec7233 smc9253
