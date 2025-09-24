@@ -11,4 +11,15 @@
     } else {
         echo "Connected to database successfully!";
     }
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $major = $_POST['major'];
+    // $section = $_POST['sectionNum'];
+    $date = $_POST['date'];
+
+    $sql = "INSERT INTO stuinfo (name, email, major, date) VALUES ('$name', '$email', '$major', '$date')";
+
+    $conn->query($sql);
+    $conn->close();
 ?>

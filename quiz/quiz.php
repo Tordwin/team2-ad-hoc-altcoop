@@ -21,19 +21,19 @@
                 <input type="text" name="email" required><br><br>
 
                 <label>Major: <span style="color: red;">*</span></label><br>
-                <input type="radio" name="major_1_1" value="W&M"> Web And Mobile (WMC)
-                <input type="radio" name="major_1_2" value="HCC"> Human-Centered Computing (HCC)
-                <input type="radio" name="major_1_3" value="CIT"> Computing And Information Technology (CIT)
-                <input type="radio" name="major_1_4" value="other"> Other
+                <input type="radio" name="major" value="W&M"> Web And Mobile (WMC)
+                <input type="radio" name="major" value="HCC"> Human-Centered Computing (HCC)
+                <input type="radio" name="major" value="CIT"> Computing And Information Technology (CIT)
+                <input type="radio" name="major" value="other"> Other
                 <!-- The creation of a script needs to be done here for other textbox to appear -->
                 </select><br><br>
 
                 <label>Section #: <span style="color: red;">*</span></label>
                 <select>
-                    <option value="">Select your Section #</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                    <option name="sectionNum" value="">Select your Section #</option>
+                    <option name="sectionNum" value="1">1</option>
+                    <option name="sectionNum" value="2">2</option>
+                    <option name="sectionNum" value="3">3</option>
                 </select><br><br>
 
                 <label>Date <span style="color: red;">*</span></label><br>
