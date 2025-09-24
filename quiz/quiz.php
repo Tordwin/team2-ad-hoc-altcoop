@@ -94,7 +94,8 @@
                         <tr>
                             <td>JavaScript</td>
                             <td><input type="radio" name="javascript" value="not_at_all"></td>
-                            <td><input type="radio" name="javascript" value="not_proficient"></td>                                <td><input type="radio" name="javascript" value="proficient"></td>
+                            <td><input type="radio" name="javascript" value="not_proficient"></td>                                
+                            <td><input type="radio" name="javascript" value="proficient"></td>
                             <td><input type="radio" name="javascript" value="very_proficient"></td>
                             <td><input type="radio" name="javascript" value="fluent"></td>
                         </tr>
