@@ -15,11 +15,18 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $major = $_POST['major'];
-    // $section = $_POST['sectionNum'];
+    $section = $_POST['sectionNum'];
     $date = $_POST['date'];
 
-    $sql = "INSERT INTO stuinfo (name, email, major, date) VALUES ('$name', '$email', '$major', '$date')";
+    $sql = "INSERT INTO stuinfo (name, email, major, section, date) VALUES (?, ?, ?, ?, ?)";
 
-    $conn->query($sql);
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssiss", $name, $email, $major, $section, $date);
+    if ($stmt->execute()) {
+    echo "New record inserted successfully!";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    $stmt->close();
     $conn->close();
 ?>

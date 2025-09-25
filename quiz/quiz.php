@@ -29,11 +29,11 @@
                 </select><br><br>
 
                 <label>Section #: <span style="color: red;">*</span></label>
-                <select>
-                    <option name="sectionNum" value="">Select your Section #</option>
-                    <option name="sectionNum" value="1">1</option>
-                    <option name="sectionNum" value="2">2</option>
-                    <option name="sectionNum" value="3">3</option>
+                <select name="sectionNum" required>
+                    <option value="">Select your Section #</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
                 </select><br><br>
 
                 <label>Date <span style="color: red;">*</span></label><br>
