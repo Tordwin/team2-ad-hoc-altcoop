@@ -9,7 +9,7 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     } else {
-        echo "Connected to database successfully!";
+        echo "Connected to database successfully! ";
     }
 
     $name = $_POST['name'];
@@ -19,14 +19,15 @@
     $date = $_POST['date'];
 
     $sql = "INSERT INTO stuinfo (name, email, major, section, date) VALUES (?, ?, ?, ?, ?)";
-
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ssiss", $name, $email, $major, $section, $date);
+
     if ($stmt->execute()) {
-    echo "New record inserted successfully!";
+        echo "New record inserted successfully!";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo $conn->error;
     }
+
     $stmt->close();
     $conn->close();
 ?>
