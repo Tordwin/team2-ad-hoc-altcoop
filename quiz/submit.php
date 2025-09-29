@@ -20,7 +20,7 @@
 
     $sql = "INSERT INTO stuinfo (name, email, major, section, date) VALUES (?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssiss", $name, $email, $major, $section, $date);
+    $stmt->bind_param("sssis", $name, $email, $major, $section, $date);
 
     if ($stmt->execute()) {
         echo "New record inserted successfully!";
