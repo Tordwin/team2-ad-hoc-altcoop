@@ -6,12 +6,6 @@
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    } else {
-        echo "Connected to database successfully! ";
-    }
-
     $name = $_POST['name'];
     $email = $_POST['email'];
     $major = $_POST['major'];
@@ -23,11 +17,33 @@
     $stmt->bind_param("sssis", $name, $email, $major, $section, $date);
 
     if ($stmt->execute()) {
-        echo "New record inserted successfully!";
+        $stmt->close();
+        $conn->close();
     } else {
         echo $conn->error;
+        $stmt->close();
+        $conn->close();
     }
-
-    $stmt->close();
-    $conn->close();
 ?>
+
+<html>
+    <head>
+        <title>Success!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <h1>Successfully Submitted 🎉</h1>
+            <hr>
+            <p>Thank you for taking the time to complete this assessment!</p>
+            <h2>🥳</h2>
+        </section>
+
+        <section>
+            <h2>🥳</h2>
+            <h1>Successfully Submitted 🎉</h1>
+            <hr>
+            <p>Thank you for taking the time to complete this assessment!</p>
+        </section>
+    </body>
+</html>

@@ -271,9 +271,8 @@
             <!--------- END OF SOFTWARE CHECKBOXES ------------------->
 
             <!------- BEGINNING OF LEADERSHIP SKILLS QUESTIONS ------->
-
             <section>
-                <h3>Leadership Skills</h3>
+                <h3>Leadership and Soft Skills</h3>
                 <hr>
 
                 <table>
@@ -295,6 +294,94 @@
                             <td><input type="radio" name="leadership_1_3" value="neutral"></td>
                             <td><input type="radio" name="leadership_1_4" value="agree"></td>
                             <td><input type="radio" name="leadership_1_5" value="strong_agree"></td>
+                        </tr>
+                        <tr>
+                            <td>Making plans and directing work appeals to me.</td>
+                            <td><input type="radio" name="leadership_2_1" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_2_2" value="disagree"></td>
+                            <td><input type="radio" name="leadership_2_3" value="neutral"></td>
+                            <td><input type="radio" name="leadership_2_4" value="agree"></td>
+                            <td><input type="radio" name="leadership_2_5" value="strong_agree"></td>
+                        </tr>
+                        <tr>
+                            <td>Taking notes and keeping track of group accomplishments appeals to me.</td>
+                            <td><input type="radio" name="leadership_3_1" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_3_2" value="disagree"></td>
+                            <td><input type="radio" name="leadership_3_3" value="neutral"></td>
+                            <td><input type="radio" name="leadership_3_4" value="agree"></td>
+                            <td><input type="radio" name="leadership_3_5" value="strong_agree"></td>
+                        </tr>
+                        <tr>
+                            <td>Time management comes naturally to me.</td>
+                            <td><input type="radio" name="leadership_4_1" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_4_2" value="disagree"></td>
+                            <td><input type="radio" name="leadership_4_3" value="neutral"></td>
+                            <td><input type="radio" name="leadership_4_4" value="agree"></td>
+                            <td><input type="radio" name="leadership_4_5" value="strong_agree"></td>
+                        </tr>
+                        <tr>
+                            <td>Maintaining communication with several teammates comes naturally to me. </td>
+                            <td><input type="radio" name="leadership_5_1" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_5_2" value="disagree"></td>
+                            <td><input type="radio" name="leadership_6_3" value="neutral"></td>
+                            <td><input type="radio" name="leadership_6_4" value="agree"></td>
+                            <td><input type="radio" name="leadership_6_5" value="strong_agree"></td>
+                        </tr>
+                        <tr>
+                            <td>Learning new skills to assist my teammates appeals to me.</td>
+                            <td><input type="radio" name="leadership_7_1" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_7_2" value="disagree"></td>
+                            <td><input type="radio" name="leadership_7_3" value="neutral"></td>
+                            <td><input type="radio" name="leadership_7_4" value="agree"></td>
+                            <td><input type="radio" name="leadership_7_5" value="strong_agree"></td>
+                        </tr>
+                        <tr>
+                            <td>Taking initiative comes naturally to me.</td>
+                            <td><input type="radio" name="leadership_8_1" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_8_2" value="disagree"></td>
+                            <td><input type="radio" name="leadership_8_3" value="neutral"></td>
+                            <td><input type="radio" name="leadership_8_4" value="agree"></td>
+                            <td><input type="radio" name="leadership_8_5" value="strong_agree"></td>
+                        </tr>
+                        <tr>
+                            <td>Problem solving is one of my strong suits.</td>
+                            <td><input type="radio" name="leadership_9_1" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_9_2" value="disagree"></td>
+                            <td><input type="radio" name="leadership_9_3" value="neutral"></td>
+                            <td><input type="radio" name="leadership_9_4" value="agree"></td>
+                            <td><input type="radio" name="leadership_9_5" value="strong_agree"></td>
+                        </tr>
+                        <tr>
+                            <td>Problem solving by myself before approaching the group appeals to me.</td>
+                            <td><input type="radio" name="leadership_10_1" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_10_2" value="disagree"></td>
+                            <td><input type="radio" name="leadership_10_3" value="neutral"></td>
+                            <td><input type="radio" name="leadership_10_4" value="agree"></td>
+                            <td><input type="radio" name="leadership_10_5" value="strong_agree"></td>
+                        </tr>
+                        <tr>
+                            <td>Problem solving as a group appeals to me.</td>
+                            <td><input type="radio" name="leadership_11_1" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_11_2" value="disagree"></td>
+                            <td><input type="radio" name="leadership_11_3" value="neutral"></td>
+                            <td><input type="radio" name="leadership_11_4" value="agree"></td>
+                            <td><input type="radio" name="leadership_11_5" value="strong_agree"></td>
+                        </tr>
+                        <tr>
+                            <td>Using Agile/Scrum comes naturally.</td>
+                            <td><input type="radio" name="leadership_12_1" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_12_2" value="disagree"></td>
+                            <td><input type="radio" name="leadership_12_3" value="neutral"></td>
+                            <td><input type="radio" name="leadership_12_4" value="agree"></td>
+                            <td><input type="radio" name="leadership_12_5" value="strong_agree"></td>
+                        </tr>
+                        <tr>
+                            <td>I am familiar with project management software.</td>
+                            <td><input type="radio" name="leadership_13_1" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_13_2" value="disagree"></td>
+                            <td><input type="radio" name="leadership_13_3" value="neutral"></td>
+                            <td><input type="radio" name="leadership_13_4" value="agree"></td>
+                            <td><input type="radio" name="leadership_13_5" value="strong_agree"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -501,30 +588,17 @@
 
             <!----------- END OF APP DEVELOPMENT QUESTIONS ----------->
 
-            <!------------- BEGINNING OF SOFT SKILLS QUESTIONS ------->
 
+            <!------------- BEGINNING OF ADDITIONAL QUESTIONS ------->
             <section>
-                <h2>Soft Skills</h2>
+                <h2>Additional Questions</h2>
                 <hr>
-            </section>
-
-            <!------------- END OF SOFT SKILLS QUESTIONS ----------->
-
-            <!------------- BEGINNING OF PERSONALITY QUESTIONS ------->
-            <section>
-                <hr>
-                <label>I feel that I can effectively solve a problem utilizing my skill-set.</label><br>
-                <input type="radio" name="leadership_2_1" value="Strongly Disagree"> Strongly Disagree
-                <input type="radio" name="leadership_2_2" value="Disagree"> Disagree
-                <input type="radio" name="leadership_2_3" value="Neutral"> Neutral
-                <input type="radio" name="leadership_2_4" value="Agree"> Agree
-                <input type="radio" name="leadership_2_5" value="Strongly Agree"> Strongly Agree<br><br>
 
                 <label>Have you had any unique experience in internships that you would like to bring to the team?</label><br>
                 <textarea name="leadership_3" rows="4" cols="50"></textarea><br><br>
             </section>
 
-            <!------------- END OF PERSONALITY QUESTIONS ------------->
+            <!------------- END OF ADDITIONAL QUESTIONS ------------->
 
             <!-- SUBMIT BUTTON -->
             <button type="submit">Submit</button>
