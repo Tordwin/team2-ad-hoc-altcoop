@@ -270,7 +270,7 @@
 
             <!--------- END OF SOFTWARE CHECKBOXES ------------------->
 
-            <!------- BEGINNING OF LEADERSHIP SKILLS QUESTIONS ------->
+            <!------- BEGINNING OF LEADERSHIP AND SOFT SKILLS QUESTIONS ------->
             <section>
                 <h3>Leadership and Soft Skills</h3>
                 <hr>
@@ -387,7 +387,7 @@
                 </table>
             </section>
 
-            <!------- END OF LEADERSHIP SKILLS QUESTIONS ------------->
+            <!------- END OF LEADERSHIP SKILLS AND SOFT SKILLS QUESTIONS ------------->
 
             <!----------- BEGINNING OF FRONT-END QUESTIONS ------------>
 
@@ -468,11 +468,11 @@
                 <input type="radio" name="back_end_4" value="Expert"> Expert<br><br>
 
                 <label>How well is your database development skills?</label><br>
-                <input type="radio" name="back_end_5_1" value="Beginner"> Beginner
-                <input type="radio" name="back_end_5_2" value="Novice"> Novice
-                <input type="radio" name="back_end_5_3" value="Intermediate"> Intermediate
-                <input type="radio" name="back_end_5_4" value="Advanced"> Advanced
-                <input type="radio" name="back_end_5_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="back_end_5" value="Beginner"> Beginner
+                <input type="radio" name="back_end_5" value="Novice"> Novice
+                <input type="radio" name="back_end_5" value="Intermediate"> Intermediate
+                <input type="radio" name="back_end_5" value="Advanced"> Advanced
+                <input type="radio" name="back_end_5" value="Expert"> Expert<br><br>
             </section>
 
             <!----------- END OF BACK-END QUESTIONS ------------------->
