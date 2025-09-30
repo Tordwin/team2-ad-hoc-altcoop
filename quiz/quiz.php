@@ -289,99 +289,99 @@
                     <tbody>
                         <tr>
                             <td>I feel comfortable delivering presentations in front of people.</td>
-                            <td><input type="radio" name="leadership_1_1" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_1_2" value="disagree"></td>
-                            <td><input type="radio" name="leadership_1_3" value="neutral"></td>
-                            <td><input type="radio" name="leadership_1_4" value="agree"></td>
-                            <td><input type="radio" name="leadership_1_5" value="strong_agree"></td>
+                            <td><input type="radio" name="leadership_1" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_1" value="disagree"></td>
+                            <td><input type="radio" name="leadership_1" value="neutral"></td>
+                            <td><input type="radio" name="leadership_1" value="agree"></td>
+                            <td><input type="radio" name="leadership_1" value="strong_agree"></td>
                         </tr>
                         <tr>
                             <td>Making plans and directing work appeals to me.</td>
-                            <td><input type="radio" name="leadership_2_1" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_2_2" value="disagree"></td>
-                            <td><input type="radio" name="leadership_2_3" value="neutral"></td>
-                            <td><input type="radio" name="leadership_2_4" value="agree"></td>
-                            <td><input type="radio" name="leadership_2_5" value="strong_agree"></td>
+                            <td><input type="radio" name="leadership_2" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_2" value="disagree"></td>
+                            <td><input type="radio" name="leadership_2" value="neutral"></td>
+                            <td><input type="radio" name="leadership_2" value="agree"></td>
+                            <td><input type="radio" name="leadership_2" value="strong_agree"></td>
                         </tr>
                         <tr>
                             <td>Taking notes and keeping track of group accomplishments appeals to me.</td>
-                            <td><input type="radio" name="leadership_3_1" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_3_2" value="disagree"></td>
-                            <td><input type="radio" name="leadership_3_3" value="neutral"></td>
-                            <td><input type="radio" name="leadership_3_4" value="agree"></td>
-                            <td><input type="radio" name="leadership_3_5" value="strong_agree"></td>
+                            <td><input type="radio" name="leadership_3" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_3" value="disagree"></td>
+                            <td><input type="radio" name="leadership_3" value="neutral"></td>
+                            <td><input type="radio" name="leadership_3" value="agree"></td>
+                            <td><input type="radio" name="leadership_3" value="strong_agree"></td>
                         </tr>
                         <tr>
                             <td>Time management comes naturally to me.</td>
-                            <td><input type="radio" name="leadership_4_1" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_4_2" value="disagree"></td>
-                            <td><input type="radio" name="leadership_4_3" value="neutral"></td>
-                            <td><input type="radio" name="leadership_4_4" value="agree"></td>
-                            <td><input type="radio" name="leadership_4_5" value="strong_agree"></td>
+                            <td><input type="radio" name="leadership_4" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_4" value="disagree"></td>
+                            <td><input type="radio" name="leadership_4" value="neutral"></td>
+                            <td><input type="radio" name="leadership_4" value="agree"></td>
+                            <td><input type="radio" name="leadership_4" value="strong_agree"></td>
                         </tr>
                         <tr>
                             <td>Maintaining communication with several teammates comes naturally to me. </td>
-                            <td><input type="radio" name="leadership_5_1" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_5_2" value="disagree"></td>
-                            <td><input type="radio" name="leadership_6_3" value="neutral"></td>
-                            <td><input type="radio" name="leadership_6_4" value="agree"></td>
-                            <td><input type="radio" name="leadership_6_5" value="strong_agree"></td>
+                            <td><input type="radio" name="leadership_5" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_5" value="disagree"></td>
+                            <td><input type="radio" name="leadership_6" value="neutral"></td>
+                            <td><input type="radio" name="leadership_6" value="agree"></td>
+                            <td><input type="radio" name="leadership_6" value="strong_agree"></td>
                         </tr>
                         <tr>
                             <td>Learning new skills to assist my teammates appeals to me.</td>
-                            <td><input type="radio" name="leadership_7_1" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_7_2" value="disagree"></td>
-                            <td><input type="radio" name="leadership_7_3" value="neutral"></td>
-                            <td><input type="radio" name="leadership_7_4" value="agree"></td>
-                            <td><input type="radio" name="leadership_7_5" value="strong_agree"></td>
+                            <td><input type="radio" name="leadership_7" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_7" value="disagree"></td>
+                            <td><input type="radio" name="leadership_7" value="neutral"></td>
+                            <td><input type="radio" name="leadership_7" value="agree"></td>
+                            <td><input type="radio" name="leadership_7" value="strong_agree"></td>
                         </tr>
                         <tr>
                             <td>Taking initiative comes naturally to me.</td>
-                            <td><input type="radio" name="leadership_8_1" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_8_2" value="disagree"></td>
-                            <td><input type="radio" name="leadership_8_3" value="neutral"></td>
-                            <td><input type="radio" name="leadership_8_4" value="agree"></td>
-                            <td><input type="radio" name="leadership_8_5" value="strong_agree"></td>
+                            <td><input type="radio" name="leadership_8" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_8" value="disagree"></td>
+                            <td><input type="radio" name="leadership_8" value="neutral"></td>
+                            <td><input type="radio" name="leadership_8" value="agree"></td>
+                            <td><input type="radio" name="leadership_8" value="strong_agree"></td>
                         </tr>
                         <tr>
                             <td>Problem solving is one of my strong suits.</td>
-                            <td><input type="radio" name="leadership_9_1" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_9_2" value="disagree"></td>
-                            <td><input type="radio" name="leadership_9_3" value="neutral"></td>
-                            <td><input type="radio" name="leadership_9_4" value="agree"></td>
-                            <td><input type="radio" name="leadership_9_5" value="strong_agree"></td>
+                            <td><input type="radio" name="leadership_9" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_9" value="disagree"></td>
+                            <td><input type="radio" name="leadership_9" value="neutral"></td>
+                            <td><input type="radio" name="leadership_9" value="agree"></td>
+                            <td><input type="radio" name="leadership_9" value="strong_agree"></td>
                         </tr>
                         <tr>
                             <td>Problem solving by myself before approaching the group appeals to me.</td>
-                            <td><input type="radio" name="leadership_10_1" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_10_2" value="disagree"></td>
-                            <td><input type="radio" name="leadership_10_3" value="neutral"></td>
-                            <td><input type="radio" name="leadership_10_4" value="agree"></td>
-                            <td><input type="radio" name="leadership_10_5" value="strong_agree"></td>
+                            <td><input type="radio" name="leadership_10" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_10" value="disagree"></td>
+                            <td><input type="radio" name="leadership_10" value="neutral"></td>
+                            <td><input type="radio" name="leadership_10" value="agree"></td>
+                            <td><input type="radio" name="leadership_10" value="strong_agree"></td>
                         </tr>
                         <tr>
                             <td>Problem solving as a group appeals to me.</td>
-                            <td><input type="radio" name="leadership_11_1" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_11_2" value="disagree"></td>
-                            <td><input type="radio" name="leadership_11_3" value="neutral"></td>
-                            <td><input type="radio" name="leadership_11_4" value="agree"></td>
-                            <td><input type="radio" name="leadership_11_5" value="strong_agree"></td>
+                            <td><input type="radio" name="leadership_11" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_11" value="disagree"></td>
+                            <td><input type="radio" name="leadership_11" value="neutral"></td>
+                            <td><input type="radio" name="leadership_11" value="agree"></td>
+                            <td><input type="radio" name="leadership_11" value="strong_agree"></td>
                         </tr>
                         <tr>
                             <td>Using Agile/Scrum comes naturally.</td>
-                            <td><input type="radio" name="leadership_12_1" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_12_2" value="disagree"></td>
-                            <td><input type="radio" name="leadership_12_3" value="neutral"></td>
-                            <td><input type="radio" name="leadership_12_4" value="agree"></td>
-                            <td><input type="radio" name="leadership_12_5" value="strong_agree"></td>
+                            <td><input type="radio" name="leadership_12" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_12" value="disagree"></td>
+                            <td><input type="radio" name="leadership_12" value="neutral"></td>
+                            <td><input type="radio" name="leadership_12" value="agree"></td>
+                            <td><input type="radio" name="leadership_12" value="strong_agree"></td>
                         </tr>
                         <tr>
                             <td>I am familiar with project management software.</td>
-                            <td><input type="radio" name="leadership_13_1" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_13_2" value="disagree"></td>
-                            <td><input type="radio" name="leadership_13_3" value="neutral"></td>
-                            <td><input type="radio" name="leadership_13_4" value="agree"></td>
-                            <td><input type="radio" name="leadership_13_5" value="strong_agree"></td>
+                            <td><input type="radio" name="leadership_13" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_13" value="disagree"></td>
+                            <td><input type="radio" name="leadership_13" value="neutral"></td>
+                            <td><input type="radio" name="leadership_13" value="agree"></td>
+                            <td><input type="radio" name="leadership_13" value="strong_agree"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -396,39 +396,39 @@
                 <hr>
 
                 <label>How well is your front-end development skills?</label><br>
-                <input type="radio" name="front_end_1_1" value="Beginner"> Beginner
-                <input type="radio" name="front_end_1_2" value="Novice"> Novice
-                <input type="radio" name="front_end_1_3" value="Intermediate"> Intermediate
-                <input type="radio" name="front_end_1_4" value="Advanced"> Advanced
-                <input type="radio" name="front_end_1_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="front_end_1" value="Beginner"> Beginner
+                <input type="radio" name="front_end_1" value="Novice"> Novice
+                <input type="radio" name="front_end_1" value="Intermediate"> Intermediate
+                <input type="radio" name="front_end_1" value="Advanced"> Advanced
+                <input type="radio" name="front_end_1" value="Expert"> Expert<br><br>
                 
                 <label>How comfortable are you in utilizing HTML and CSS in the creation of a web page</label><br>
-                <input type="radio" name="front_end_2_1" value="Beginner"> Beginner
-                <input type="radio" name="front_end_2_2" value="Novice"> Novice
-                <input type="radio" name="front_end_2_3" value="Intermediate"> Intermediate
-                <input type="radio" name="front_end_2_4" value="Advanced"> Advanced
-                <input type="radio" name="front_end_2_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="front_end_2" value="Beginner"> Beginner
+                <input type="radio" name="front_end_2" value="Novice"> Novice
+                <input type="radio" name="front_end_2" value="Intermediate"> Intermediate
+                <input type="radio" name="front_end_2" value="Advanced"> Advanced
+                <input type="radio" name="front_end_2" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you in the creation of JavaScript scripts?</label><br>
-                <input type="radio" name="front_end_3_1" value="Beginner"> Beginner
-                <input type="radio" name="front_end_3_2" value="Novice"> Novice
-                <input type="radio" name="front_end_3_3" value="Intermediate"> Intermediate
-                <input type="radio" name="front_end_3_4" value="Advanced"> Advanced
-                <input type="radio" name="front_end_3_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="front_end_3" value="Beginner"> Beginner
+                <input type="radio" name="front_end_3" value="Novice"> Novice
+                <input type="radio" name="front_end_3" value="Intermediate"> Intermediate
+                <input type="radio" name="front_end_3" value="Advanced"> Advanced
+                <input type="radio" name="front_end_3" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you with creating pages in PHP</label><br>
-                <input type="radio" name="front_end_4_1" value="Beginner"> Beginner
-                <input type="radio" name="front_end_4_2" value="Novice"> Novice
-                <input type="radio" name="front_end_4_3" value="Intermediate"> Intermediate
-                <input type="radio" name="front_end_4_4" value="Advanced"> Advanced
-                <input type="radio" name="front_end_4_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="front_end_4" value="Beginner"> Beginner
+                <input type="radio" name="front_end_4" value="Novice"> Novice
+                <input type="radio" name="front_end_4" value="Intermediate"> Intermediate
+                <input type="radio" name="front_end_4" value="Advanced"> Advanced
+                <input type="radio" name="front_end_4" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you with creating and processing interactable elements on a web page? (Data submissions, quizzes, drop downs, and menus)</label><br>
-                <input type="radio" name="front_end_5_1" value="Beginner"> Beginner
-                <input type="radio" name="front_end_5_2" value="Novice"> Novice
-                <input type="radio" name="front_end_5_3" value="Intermediate"> Intermediate
-                <input type="radio" name="front_end_5_4" value="Advanced"> Advanced
-                <input type="radio" name="front_end_5_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="front_end_5" value="Beginner"> Beginner
+                <input type="radio" name="front_end_5" value="Novice"> Novice
+                <input type="radio" name="front_end_5" value="Intermediate"> Intermediate
+                <input type="radio" name="front_end_5" value="Advanced"> Advanced
+                <input type="radio" name="front_end_5" value="Expert"> Expert<br><br>
             </section>
             
             <!----------- END OF FRONT-END QUESTIONS ------------------>
@@ -440,32 +440,32 @@
                 <hr>
                 
                 <label>How well is your back-end development skills?</label><br>
-                <input type="radio" name="back_end_1_1" value="Beginner"> Beginner
-                <input type="radio" name="back_end_1_2" value="Novice"> Novice
-                <input type="radio" name="back_end_1_3" value="Intermediate"> Intermediate
-                <input type="radio" name="back_end_1_4" value="Advanced"> Advanced
-                <input type="radio" name="back_end_1_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="back_end_1" value="Beginner"> Beginner
+                <input type="radio" name="back_end_1" value="Novice"> Novice
+                <input type="radio" name="back_end_1" value="Intermediate"> Intermediate
+                <input type="radio" name="back_end_1" value="Advanced"> Advanced
+                <input type="radio" name="back_end_1" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you with creating a database from provided data?</label><br>
-                <input type="radio" name="back_end_2_1" value="Beginner"> Beginner
-                <input type="radio" name="back_end_2_2" value="Novice"> Novice
-                <input type="radio" name="back_end_2_3" value="Intermediate"> Intermediate
-                <input type="radio" name="back_end_2_4" value="Advanced"> Advanced
-                <input type="radio" name="back_end_2_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="back_end_2" value="Beginner"> Beginner
+                <input type="radio" name="back_end_2" value="Novice"> Novice
+                <input type="radio" name="back_end_2" value="Intermediate"> Intermediate
+                <input type="radio" name="back_end_2" value="Advanced"> Advanced
+                <input type="radio" name="back_end_2" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you with loading and manipulating databases?</label><br>
-                <input type="radio" name="back_end_3_1" value="Beginner"> Beginner
-                <input type="radio" name="back_end_3_2" value="Novice"> Novice
-                <input type="radio" name="back_end_3_3" value="Intermediate"> Intermediate
-                <input type="radio" name="back_end_3_4" value="Advanced"> Advanced
-                <input type="radio" name="back_end_3_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="back_end_3" value="Beginner"> Beginner
+                <input type="radio" name="back_end_3" value="Novice"> Novice
+                <input type="radio" name="back_end_3" value="Intermediate"> Intermediate
+                <input type="radio" name="back_end_3" value="Advanced"> Advanced
+                <input type="radio" name="back_end_3" value="Expert"> Expert<br><br>
 
                 <label>How is your bug detection skills?</label><br>
-                <input type="radio" name="back_end_4_1" value="Beginner"> Beginner
-                <input type="radio" name="back_end_4_2" value="Novice"> Novice
-                <input type="radio" name="back_end_4_3" value="Intermediate"> Intermediate
-                <input type="radio" name="back_end_4_4" value="Advanced"> Advanced
-                <input type="radio" name="back_end_4_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="back_end_4" value="Beginner"> Beginner
+                <input type="radio" name="back_end_4" value="Novice"> Novice
+                <input type="radio" name="back_end_4" value="Intermediate"> Intermediate
+                <input type="radio" name="back_end_4" value="Advanced"> Advanced
+                <input type="radio" name="back_end_4" value="Expert"> Expert<br><br>
 
                 <label>How well is your database development skills?</label><br>
                 <input type="radio" name="back_end_5_1" value="Beginner"> Beginner
@@ -484,18 +484,18 @@
                 <hr>
 
                 <label>How well is your GUI development skills?</label><br>
-                <input type="radio" name="gui_1_1" value="Beginner"> Beginner
-                <input type="radio" name="gui_1_2" value="Novice"> Novice
-                <input type="radio" name="gui_1_3" value="Intermediate"> Intermediate
-                <input type="radio" name="gui_1_4" value="Advanced"> Advanced
-                <input type="radio" name="gui_1_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="gui_1" value="Beginner"> Beginner
+                <input type="radio" name="gui_1" value="Novice"> Novice
+                <input type="radio" name="gui_1" value="Intermediate"> Intermediate
+                <input type="radio" name="gui_1" value="Advanced"> Advanced
+                <input type="radio" name="gui_1" value="Expert"> Expert<br><br>
 
                 <label>How would you rate your skills in GUI development?</label><br>
-                <input type="radio" name="gui_2_1" value="Weakest"> Weakest
-                <input type="radio" name="gui_2_2" value="Weak"> Weak
-                <input type="radio" name="gui_2_3" value="Neutral"> Neutral
-                <input type="radio" name="gui_2_4" value="Strong"> Strong
-                <input type="radio" name="gui_2_5" value="Strongest"> Strongest<br><br>
+                <input type="radio" name="gui_2" value="Weakest"> Weakest
+                <input type="radio" name="gui_2" value="Weak"> Weak
+                <input type="radio" name="gui_2" value="Neutral"> Neutral
+                <input type="radio" name="gui_2" value="Strong"> Strong
+                <input type="radio" name="gui_2" value="Strongest"> Strongest<br><br>
             </section>
 
             <!----------- END OF GUI QUESTIONS ------------------------>
@@ -507,39 +507,39 @@
                 <hr>
 
                 <label>How well is your UX/UI design skills?</label><br>
-                <input type="radio" name="uxui_1_1" value="Beginner"> Beginner
-                <input type="radio" name="uxui_1_2" value="Novice"> Novice
-                <input type="radio" name="uxui_1_3" value="Intermediate"> Intermediate
-                <input type="radio" name="uxui_1_4" value="Advanced"> Advanced
-                <input type="radio" name="uxui_1_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="uxui_1" value="Beginner"> Beginner
+                <input type="radio" name="uxui_1" value="Novice"> Novice
+                <input type="radio" name="uxui_1" value="Intermediate"> Intermediate
+                <input type="radio" name="uxui_1" value="Advanced"> Advanced
+                <input type="radio" name="uxui_1" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you with wire framing and prototyping?</label><br>
-                <input type="radio" name="uxui_2_1" value="Beginner"> Beginner
-                <input type="radio" name="uxui_2_2" value="Novice"> Novice
-                <input type="radio" name="uxui_2_3" value="Intermediate"> Intermediate
-                <input type="radio" name="uxui_2_4" value="Advanced"> Advanced
-                <input type="radio" name="uxui_2_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="uxui_2" value="Beginner"> Beginner
+                <input type="radio" name="uxui_2" value="Novice"> Novice
+                <input type="radio" name="uxui_2" value="Intermediate"> Intermediate
+                <input type="radio" name="uxui_2" value="Advanced"> Advanced
+                <input type="radio" name="uxui_2" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you with usability testing?</label><br>
-                <input type="radio" name="uxui_3_1" value="Beginner"> Beginner
-                <input type="radio" name="uxui_3_2" value="Novice"> Novice
-                <input type="radio" name="uxui_3_3" value="Intermediate"> Intermediate
-                <input type="radio" name="uxui_3_4" value="Advanced"> Advanced
-                <input type="radio" name="uxui_3_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="uxui_3" value="Beginner"> Beginner
+                <input type="radio" name="uxui_3" value="Novice"> Novice
+                <input type="radio" name="uxui_3" value="Intermediate"> Intermediate
+                <input type="radio" name="uxui_3" value="Advanced"> Advanced
+                <input type="radio" name="uxui_3" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you with user interviews?</label><br>
-                <input type="radio" name="uxui_4_1" value="Beginner"> Beginner
-                <input type="radio" name="uxui_4_2" value="Novice"> Novice
-                <input type="radio" name="uxui_4_3" value="Intermediate"> Intermediate
-                <input type="radio" name="uxui_4_4" value="Advanced"> Advanced
-                <input type="radio" name="uxui_4_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="uxui_4" value="Beginner"> Beginner
+                <input type="radio" name="uxui_4" value="Novice"> Novice
+                <input type="radio" name="uxui_4" value="Intermediate"> Intermediate
+                <input type="radio" name="uxui_4" value="Advanced"> Advanced
+                <input type="radio" name="uxui_4" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you with UI design?</label><br>
-                <input type="radio" name="uxui_5_1" value="Beginner"> Beginner
-                <input type="radio" name="uxui_5_2" value="Novice"> Novice
-                <input type="radio" name="uxui_5_3" value="Intermediate"> Intermediate
-                <input type="radio" name="uxui_5_4" value="Advanced"> Advanced
-                <input type="radio" name="uxui_5_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="uxui_5" value="Beginner"> Beginner
+                <input type="radio" name="uxui_5" value="Novice"> Novice
+                <input type="radio" name="uxui_5" value="Intermediate"> Intermediate
+                <input type="radio" name="uxui_5" value="Advanced"> Advanced
+                <input type="radio" name="uxui_5" value="Expert"> Expert<br><br>
             </section>
 
             <!----------- END OF UX/UI QUESTIONS --------------------->
@@ -551,39 +551,39 @@
                 <hr>
                 
                 <label>How well is your app development?</label><br>
-                <input type="radio" name="app_dev_1_1" value="Beginner"> Beginner
-                <input type="radio" name="app_dev_1_2" value="Novice"> Novice
-                <input type="radio" name="app_dev_1_3" value="Intermediate"> Intermediate
-                <input type="radio" name="app_dev_1_4" value="Advanced"> Advanced
-                <input type="radio" name="app_dev_1_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="app_dev_1" value="Beginner"> Beginner
+                <input type="radio" name="app_dev_1" value="Novice"> Novice
+                <input type="radio" name="app_dev_1" value="Intermediate"> Intermediate
+                <input type="radio" name="app_dev_1" value="Advanced"> Advanced
+                <input type="radio" name="app_dev_1" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you in development of an Apple application? (Swift)</label> <br>
-                <input type="radio" name="app_dev_2_1" value="Beginner"> Beginner
-                <input type="radio" name="app_dev_2_2" value="Novice"> Novice
-                <input type="radio" name="app_dev_2_3" value="Intermediate"> Intermediate
-                <input type="radio" name="app_dev_2_4" value="Advanced"> Advanced
-                <input type="radio" name="app_dev_2_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="app_dev_2" value="Beginner"> Beginner
+                <input type="radio" name="app_dev_2" value="Novice"> Novice
+                <input type="radio" name="app_dev_2" value="Intermediate"> Intermediate
+                <input type="radio" name="app_dev_2" value="Advanced"> Advanced
+                <input type="radio" name="app_dev_2" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you in development of a Samsung application? (Kotlin)</label><br>
-                <input type="radio" name="app_dev_3_1" value="Beginner"> Beginner
-                <input type="radio" name="app_dev_3_2" value="Novice"> Novice
-                <input type="radio" name="app_dev_3_3" value="Intermediate"> Intermediate
-                <input type="radio" name="app_dev_3_4" value="Advanced"> Advanced
-                <input type="radio" name="app_dev_3_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="app_dev_3" value="Beginner"> Beginner
+                <input type="radio" name="app_dev_3" value="Novice"> Novice
+                <input type="radio" name="app_dev_3" value="Intermediate"> Intermediate
+                <input type="radio" name="app_dev_3" value="Advanced"> Advanced
+                <input type="radio" name="app_dev_3" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you developing a cross-platform mobile application for both Samsung and Apple? (Dart via Flutter)</label><br>
-                <input type="radio" name="app_dev_4_1" value="Beginner"> Beginner
-                <input type="radio" name="app_dev_4_2" value="Novice"> Novice
-                <input type="radio" name="app_dev_4_3" value="Intermediate"> Intermediate
-                <input type="radio" name="app_dev_4_4" value="Advanced"> Advanced
-                <input type="radio" name="app_dev_4_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="app_dev_4" value="Beginner"> Beginner
+                <input type="radio" name="app_dev_4" value="Novice"> Novice
+                <input type="radio" name="app_dev_4" value="Intermediate"> Intermediate
+                <input type="radio" name="app_dev_4" value="Advanced"> Advanced
+                <input type="radio" name="app_dev_4" value="Expert"> Expert<br><br>
 
                 <label>How comfortable are you in developing a web application?</label><br>
-                <input type="radio" name="app_dev_5_1" value="Beginner"> Beginner
-                <input type="radio" name="app_dev_5_2" value="Novice"> Novice
-                <input type="radio" name="app_dev_5_3" value="Intermediate"> Intermediate
-                <input type="radio" name="app_dev_5_4" value="Advanced"> Advanced
-                <input type="radio" name="app_dev_5_5" value="Expert"> Expert<br><br>
+                <input type="radio" name="app_dev_5" value="Beginner"> Beginner
+                <input type="radio" name="app_dev_5" value="Novice"> Novice
+                <input type="radio" name="app_dev_5" value="Intermediate"> Intermediate
+                <input type="radio" name="app_dev_5" value="Advanced"> Advanced
+                <input type="radio" name="app_dev_5" value="Expert"> Expert<br><br>
             </section>
 
             <!----------- END OF APP DEVELOPMENT QUESTIONS ----------->
@@ -595,7 +595,7 @@
                 <hr>
 
                 <label>Have you had any unique experience in internships that you would like to bring to the team?</label><br>
-                <textarea name="leadership_3" rows="4" cols="50"></textarea><br><br>
+                <textarea name="additional_1" rows="4" cols="50"></textarea><br><br>
             </section>
 
             <!------------- END OF ADDITIONAL QUESTIONS ------------->
