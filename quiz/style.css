@@ -76,3 +76,14 @@ td input{
     display: block;
     margin: auto;
 }
+
+.celebrate{
+    font-size: 700%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#centerSubmission{
+    text-align: center;
+}

@@ -36,11 +36,11 @@
             <h1>Successfully Submitted 🎉</h1>
             <hr>
             <p>Thank you for taking the time to complete this assessment!</p>
-            <h2>🥳</h2>
+            <h2 class="celebrate">🥳</h2>
         </section>
 
-        <section>
-            <h2>🥳</h2>
+        <section id="centerSubmission">
+            <h2 class="celebrate">🥳</h2>
             <h1>Successfully Submitted 🎉</h1>
             <hr>
             <p>Thank you for taking the time to complete this assessment!</p>
