@@ -225,46 +225,46 @@
 
                 <label>Please select the software you are familiar with:</label><br>
                 <span>
-                    <input type="checkbox" name="software_app" value="git"><br>Git
+                    <input type="checkbox" name="software_app[]" value="git"><br>Git
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="docker"><br>Docker
+                    <input type="checkbox" name="software_app[]" value="docker"><br>Docker
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="vs"><br>Visual Studio
+                    <input type="checkbox" name="software_app[]" value="vs"><br>Visual Studio
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="vscode"><br>Visual Studio Code
+                    <input type="checkbox" name="software_app[]" value="vscode"><br>Visual Studio Code
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="mysql_workbench"><br>MySQL Workbench<br>
+                    <input type="checkbox" name="software_app[]" value="mysql_workbench"><br>MySQL Workbench<br>
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="mac"><br>Mac OS
+                    <input type="checkbox" name="software_app[]" value="mac"><br>Mac OS
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="linux"><br>Linux OS
+                    <input type="checkbox" name="software_app[]" value="linux"><br>Linux OS
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="windows"><br>Windows OS
+                    <input type="checkbox" name="software_app[]" value="windows"><br>Windows OS
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="mobile"><br>Mobile OS (Android, IOS)<br>
+                    <input type="checkbox" name="software_app[]" value="mobile"><br>Mobile OS (Android, IOS)<br>
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="jira"><br>Jira
+                    <input type="checkbox" name="software_app[]" value="jira"><br>Jira
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="azure"><br>Azure
+                    <input type="checkbox" name="software_app[]" value="azure"><br>Azure
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="slack"><br>Slack
+                    <input type="checkbox" name="software_app[]" value="slack"><br>Slack
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="trello"><br>Trello
+                    <input type="checkbox" name="software_app[]" value="trello"><br>Trello
                 </span>
                 <span>
-                    <input type="checkbox" name="software_app" value="microsoft_teams"><br>Microsoft Teams<br>
+                    <input type="checkbox" name="software_app[]" value="microsoft_teams"><br>Microsoft Teams<br>
                 </span>
             </section>
 
@@ -320,15 +320,23 @@
                             <td><input type="radio" name="leadership_4" value="strong_agree"></td>
                         </tr>
                         <tr>
-                            <td>Maintaining communication with several teammates comes naturally to me. </td>
+                            <td>Maintaining communication with several teammates comes naturally to me.</td>
                             <td><input type="radio" name="leadership_5" value="strong_disagree"></td>
                             <td><input type="radio" name="leadership_5" value="disagree"></td>
+                            <td><input type="radio" name="leadership_5" value="neutral"></td>
+                            <td><input type="radio" name="leadership_5" value="agree"></td>
+                            <td><input type="radio" name="leadership_5" value="strong_agree"></td>
+                        </tr>
+                        <tr>
+                            <td>Learning new skills to assist my teammates appeals to me.</td>
+                            <td><input type="radio" name="leadership_6" value="strong_disagree"></td>
+                            <td><input type="radio" name="leadership_6" value="disagree"></td>
                             <td><input type="radio" name="leadership_6" value="neutral"></td>
                             <td><input type="radio" name="leadership_6" value="agree"></td>
                             <td><input type="radio" name="leadership_6" value="strong_agree"></td>
                         </tr>
                         <tr>
-                            <td>Learning new skills to assist my teammates appeals to me.</td>
+                            <td>Taking initiative comes naturally to me.</td>
                             <td><input type="radio" name="leadership_7" value="strong_disagree"></td>
                             <td><input type="radio" name="leadership_7" value="disagree"></td>
                             <td><input type="radio" name="leadership_7" value="neutral"></td>
@@ -336,7 +344,7 @@
                             <td><input type="radio" name="leadership_7" value="strong_agree"></td>
                         </tr>
                         <tr>
-                            <td>Taking initiative comes naturally to me.</td>
+                            <td>Problem solving is one of my strong suits.</td>
                             <td><input type="radio" name="leadership_8" value="strong_disagree"></td>
                             <td><input type="radio" name="leadership_8" value="disagree"></td>
                             <td><input type="radio" name="leadership_8" value="neutral"></td>
@@ -344,7 +352,7 @@
                             <td><input type="radio" name="leadership_8" value="strong_agree"></td>
                         </tr>
                         <tr>
-                            <td>Problem solving is one of my strong suits.</td>
+                            <td>Problem solving by myself before approaching the group appeals to me.</td>
                             <td><input type="radio" name="leadership_9" value="strong_disagree"></td>
                             <td><input type="radio" name="leadership_9" value="disagree"></td>
                             <td><input type="radio" name="leadership_9" value="neutral"></td>
@@ -352,7 +360,7 @@
                             <td><input type="radio" name="leadership_9" value="strong_agree"></td>
                         </tr>
                         <tr>
-                            <td>Problem solving by myself before approaching the group appeals to me.</td>
+                            <td>Problem solving as a group appeals to me.</td>
                             <td><input type="radio" name="leadership_10" value="strong_disagree"></td>
                             <td><input type="radio" name="leadership_10" value="disagree"></td>
                             <td><input type="radio" name="leadership_10" value="neutral"></td>
@@ -360,7 +368,7 @@
                             <td><input type="radio" name="leadership_10" value="strong_agree"></td>
                         </tr>
                         <tr>
-                            <td>Problem solving as a group appeals to me.</td>
+                            <td>Using Agile/Scrum comes naturally.</td>
                             <td><input type="radio" name="leadership_11" value="strong_disagree"></td>
                             <td><input type="radio" name="leadership_11" value="disagree"></td>
                             <td><input type="radio" name="leadership_11" value="neutral"></td>
@@ -368,20 +376,12 @@
                             <td><input type="radio" name="leadership_11" value="strong_agree"></td>
                         </tr>
                         <tr>
-                            <td>Using Agile/Scrum comes naturally.</td>
+                            <td>I am familiar with project management software.</td>
                             <td><input type="radio" name="leadership_12" value="strong_disagree"></td>
                             <td><input type="radio" name="leadership_12" value="disagree"></td>
                             <td><input type="radio" name="leadership_12" value="neutral"></td>
                             <td><input type="radio" name="leadership_12" value="agree"></td>
                             <td><input type="radio" name="leadership_12" value="strong_agree"></td>
-                        </tr>
-                        <tr>
-                            <td>I am familiar with project management software.</td>
-                            <td><input type="radio" name="leadership_13" value="strong_disagree"></td>
-                            <td><input type="radio" name="leadership_13" value="disagree"></td>
-                            <td><input type="radio" name="leadership_13" value="neutral"></td>
-                            <td><input type="radio" name="leadership_13" value="agree"></td>
-                            <td><input type="radio" name="leadership_13" value="strong_agree"></td>
                         </tr>
                     </tbody>
                 </table>
