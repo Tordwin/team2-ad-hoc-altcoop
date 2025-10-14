@@ -25,7 +25,19 @@
                 <input type="radio" name="major" value="HCC"> Human-Centered Computing (HCC)
                 <input type="radio" name="major" value="CIT"> Computing And Information Technology (CIT)
                 <input type="radio" name="major" value="other"> Other
-                <!-- The creation of a script needs to be done here for other textbox to appear -->
+                <input type="text" id="other" name="major" placeholder="Specify your major..." style="display:none;">
+                <script>
+                    const other = document.getElementById('other');
+                    document.addEventListener('change', function (e) {
+                        if (e.target.name === 'major') {
+                            if (e.target.value === 'other') {
+                                other.style.display = 'inline';
+                            } else {
+                                other.style.display = 'none';
+                            }
+                        }
+                    });
+                </script>
                 </select><br><br>
 
                 <label>Section #: <span style="color: red;">*</span></label>
