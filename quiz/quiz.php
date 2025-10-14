@@ -37,7 +37,14 @@
                             }
                         }
                     });
-                </script>
+                </script><br><br>
+
+                <label>Term: <span style="color: red;">*</span></label>
+                <select name="term" required>
+                    <option value="Spring 2026">Spring 2026</option>
+                    <option value="Fall 2026">Fall 2026</option>
+                    <option value="Spring 2027">Spring 2027</option>
+                    <option value="Fall 2027">Fall 2027</option>
                 </select><br><br>
 
                 <label>Section #: <span style="color: red;">*</span></label>
@@ -48,7 +55,7 @@
                     <option value="3">3</option>
                 </select><br><br>
 
-                <label>Date <span style="color: red;">*</span></label><br>
+                <label>Date: <span style="color: red;">*</span></label><br>
                 <input type="date" name="date" required><br><br>
             </section>
 
