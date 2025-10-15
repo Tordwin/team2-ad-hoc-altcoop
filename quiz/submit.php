@@ -10,6 +10,7 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $major = $_POST['major'];
+    $term = $_POST['term'];
     $section = $_POST['sectionNum'];
     $date = $_POST['date'];
 
