@@ -40,11 +40,12 @@
                 </script><br><br>
 
                 <label>Term: <span style="color: red;">*</span></label>
+                <?php $year = (int) date("Y"); $futureYear = $year + 1 ?>
                 <select name="term" required>
-                    <option value="Spring 2026">Spring 2026</option>
-                    <option value="Fall 2026">Fall 2026</option>
-                    <option value="Spring 2027">Spring 2027</option>
-                    <option value="Fall 2027">Fall 2027</option>
+                    <option value=<?php echo "Spring " . $year ?>>Fall <?php echo $year?></option>
+                    <option value=<?php echo "Fall " . $futureYear?>>Spring <?php echo $futureYear?></option>
+                    <option value=<?php echo "Spring " . $futureYear?>>Fall <?php echo $futureYear?></option>
+                    <option value=<?php echo "Fall " . $futureYear + 1?>>Spring <?php echo $futureYear + 1?></option>
                 </select><br><br>
 
                 <label>Section #: <span style="color: red;">*</span></label>
@@ -284,7 +285,7 @@
             <!--------- END OF SOFTWARE CHECKBOXES ------------------->
 
             <!------- BEGINNING OF LEADERSHIP AND SOFT SKILLS QUESTIONS ------->
-            <section>
+            <section id="personality">
                 <h3>Leadership and Soft Skills</h3>
                 <hr>
 
@@ -302,43 +303,43 @@
                     <tbody>
                         <tr>
                             <td>I feel comfortable delivering presentations in front of people.</td>
-                            <td><input type="radio" name="leadership_1" value="strong_disagree" data-score="1"></td>
-                            <td><input type="radio" name="leadership_1" value="disagree" data-score="2"></td>
-                            <td><input type="radio" name="leadership_1" value="neutral" data-score="3"></td>
-                            <td><input type="radio" name="leadership_1" value="agree" data-score="4"></td>
-                            <td><input type="radio" name="leadership_1" value="strong_agree" data-score="5"></td>
+                            <td><input type="radio" name="leadership_1" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_1" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_1" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_1" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_1" value="strong_agree" personality-score="5"></td>
                         </tr>
                         <tr>
                             <td>Making plans and directing work appeals to me.</td>
-                            <td><input type="radio" name="leadership_2" value="strong_disagree" data-score="1"></td>
-                            <td><input type="radio" name="leadership_2" value="disagree" data-score="2"></td>
-                            <td><input type="radio" name="leadership_2" value="neutral" data-score="3"></td>
-                            <td><input type="radio" name="leadership_2" value="agree" data-score="4"></td>
-                            <td><input type="radio" name="leadership_2" value="strong_agree" data-score="5"></td>
+                            <td><input type="radio" name="leadership_2" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_2" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_2" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_2" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_2" value="strong_agree" personality-score="5"></td>
                         </tr>
                         <tr>
                             <td>Taking notes and keeping track of group accomplishments appeals to me.</td>
-                            <td><input type="radio" name="leadership_3" value="strong_disagree" data-score="1"></td>
-                            <td><input type="radio" name="leadership_3" value="disagree" data-score="2"></td>
-                            <td><input type="radio" name="leadership_3" value="neutral" data-score="3"></td>
-                            <td><input type="radio" name="leadership_3" value="agree" data-score="4"></td>
-                            <td><input type="radio" name="leadership_3" value="strong_agree" data-score="5"></td>
+                            <td><input type="radio" name="leadership_3" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_3" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_3" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_3" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_3" value="strong_agree" personality-score="5"></td>
                         </tr>
                         <tr>
                             <td>Time management comes naturally to me.</td>
-                            <td><input type="radio" name="leadership_4" value="strong_disagree" data-score="1"></td>
-                            <td><input type="radio" name="leadership_4" value="disagree" data-score="2"></td>
-                            <td><input type="radio" name="leadership_4" value="neutral" data-score="3"></td>
-                            <td><input type="radio" name="leadership_4" value="agree" data-score="4"></td>
-                            <td><input type="radio" name="leadership_4" value="strong_agree" data-score="5"></td>
+                            <td><input type="radio" name="leadership_4" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_4" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_4" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_4" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_4" value="strong_agree" personality-score="5"></td>
                         </tr>
                         <tr>
                             <td>Maintaining communication with several teammates comes naturally to me.</td>
-                            <td><input type="radio" name="leadership_5" value="strong_disagree" data-score="1"></td>
-                            <td><input type="radio" name="leadership_5" value="disagree" data-score="2"></td>
-                            <td><input type="radio" name="leadership_5" value="neutral" data-score="3"></td>
-                            <td><input type="radio" name="leadership_5" value="agree" data-score="4"></td>
-                            <td><input type="radio" name="leadership_5" value="strong_agree" data-score="5"></td>
+                            <td><input type="radio" name="leadership_5" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_5" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_5" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_5" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_5" value="strong_agree" personality-score="5"></td>
                         </tr>
                         <tr>
                             <td>Learning new skills to assist my teammates appeals to me.</td>
@@ -350,51 +351,51 @@
                         </tr>
                         <tr>
                             <td>Taking initiative comes naturally to me.</td>
-                            <td><input type="radio" name="leadership_7" value="strong_disagree" data-score="1"></td>
-                            <td><input type="radio" name="leadership_7" value="disagree" data-score="2"></td>
-                            <td><input type="radio" name="leadership_7" value="neutral" data-score="3"></td>
-                            <td><input type="radio" name="leadership_7" value="agree" data-score="4"></td>
-                            <td><input type="radio" name="leadership_7" value="strong_agree" data-score="5"></td>
+                            <td><input type="radio" name="leadership_7" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_7" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_7" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_7" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_7" value="strong_agree" personality-score="5"></td>
                         </tr>
                         <tr>
                             <td>Problem solving is one of my strong suits.</td>
-                            <td><input type="radio" name="leadership_8" value="strong_disagree" data-score="1"></td>
-                            <td><input type="radio" name="leadership_8" value="disagree" data-score="2"></td>
-                            <td><input type="radio" name="leadership_8" value="neutral" data-score="3"></td>
-                            <td><input type="radio" name="leadership_8" value="agree" data-score="4"></td>
-                            <td><input type="radio" name="leadership_8" value="strong_agree" data-score="5"></td>
+                            <td><input type="radio" name="leadership_8" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_8" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_8" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_8" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_8" value="strong_agree" personality-score="5"></td>
                         </tr>
                         <tr>
                             <td>Problem solving by myself before approaching the group appeals to me.</td>
-                            <td><input type="radio" name="leadership_9" value="strong_disagree" data-score="1"></td>
-                            <td><input type="radio" name="leadership_9" value="disagree" data-score="2"></td>
-                            <td><input type="radio" name="leadership_9" value="neutral" data-score="3"></td>
-                            <td><input type="radio" name="leadership_9" value="agree" data-score="4"></td>
-                            <td><input type="radio" name="leadership_9" value="strong_agree" data-score="5"></td>
+                            <td><input type="radio" name="leadership_9" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_9" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_9" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_9" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_9" value="strong_agree" personality-score="5"></td>
                         </tr>
                         <tr>
                             <td>Problem solving as a group appeals to me.</td>
-                            <td><input type="radio" name="leadership_10" value="strong_disagree" data-score="1"></td>
-                            <td><input type="radio" name="leadership_10" value="disagree" data-score="2"></td>
-                            <td><input type="radio" name="leadership_10" value="neutral" data-score="3"></td>
-                            <td><input type="radio" name="leadership_10" value="agree" data-score="4"></td>
-                            <td><input type="radio" name="leadership_10" value="strong_agree" data-score="5"></td>
+                            <td><input type="radio" name="leadership_10" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_10" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_10" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_10" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_10" value="strong_agree" personality-score="5"></td>
                         </tr>
                         <tr>
                             <td>Using Agile/Scrum comes naturally.</td>
-                            <td><input type="radio" name="leadership_11" value="strong_disagree" data-score="1"></td>
-                            <td><input type="radio" name="leadership_11" value="disagree" data-score="2"></td>
-                            <td><input type="radio" name="leadership_11" value="neutral" data-score="3"></td>
-                            <td><input type="radio" name="leadership_11" value="agree" data-score="4"></td>
-                            <td><input type="radio" name="leadership_11" value="strong_agree" data-score="5"></td>
+                            <td><input type="radio" name="leadership_11" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_11" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_11" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_11" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_11" value="strong_agree" personality-score="5"></td>
                         </tr>
                         <tr>
                             <td>I am familiar with project management software.</td>
-                            <td><input type="radio" name="leadership_12" value="strong_disagree" data-score="1"></td>
-                            <td><input type="radio" name="leadership_12" value="disagree" data-score="2"></td>
-                            <td><input type="radio" name="leadership_12" value="neutral" data-score="3"></td>
-                            <td><input type="radio" name="leadership_12" value="agree" data-score="4"></td>
-                            <td><input type="radio" name="leadership_12" value="strong_agree" data-score="5"></td>
+                            <td><input type="radio" name="leadership_12" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_12" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_12" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_12" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_12" value="strong_agree" personality-score="5"></td>
                         </tr>
                     </tbody>
                 </table>
