@@ -40,12 +40,18 @@
                 </script><br><br>
 
                 <label>Term: <span style="color: red;">*</span></label>
-                <?php $year = (int) date("Y"); $futureYear = $year + 1 ?>
                 <select name="term" required>
-                    <option value=<?php echo "Spring " . $year ?>>Fall <?php echo $year?></option>
-                    <option value=<?php echo "Fall " . $futureYear?>>Spring <?php echo $futureYear?></option>
-                    <option value=<?php echo "Spring " . $futureYear?>>Fall <?php echo $futureYear?></option>
-                    <option value=<?php echo "Fall " . $futureYear + 1?>>Spring <?php echo $futureYear + 1?></option>
+                    <?php
+                        $startYear = date("Y");
+                        $endYear = $startYear + 3;
+
+                        for ($year = $startYear; $year <= $endYear; $year++) {
+                            echo '<option value="Fall ' . $year . '">Fall ' . $year . '</option>';
+                            if ($year + 1 <= $endYear) {
+                                echo '<option value="Spring ' . ($year + 1) . '">Spring ' . ($year + 1) . '</option>';
+                            }
+                        }
+                    ?>
                 </select><br><br>
 
                 <label>Section #: <span style="color: red;">*</span></label>

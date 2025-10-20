@@ -14,10 +14,10 @@
     $section = $_POST['sectionNum'];
     $date = $_POST['date'];
 
-    $sql = "INSERT INTO stuinfo (name, email, major, section, date) 
-        VALUES (?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO stuinfo (name, email, major, term, section, date) 
+        VALUES (?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sssis", $name, $email, $major, $section, $date);
+    $stmt->bind_param("ssssis", $name, $email, $major, $term, $section, $date);
     $stmt->execute();
 
     // LANGUAGES
