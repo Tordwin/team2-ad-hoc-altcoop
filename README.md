@@ -7,6 +7,14 @@ Monday 1-2PM
 Wednesday 3-4PM
 Friday 1-2PM
 
+## CSV to MySQL Import Script
+
+**A simple Python script to import a CSV file into an existing MySQL table.**
+
+This script does **not** create or drop tables—it only inserts data. It handles `NaN` values and processes rows in batches to avoid memory issues.
+
+---
+
 ## Schema
 
 This repository now includes `addresses.sql`, which defines the MySQL schema for the `addresses` table.  
@@ -22,14 +30,6 @@ To load the schema into MySQL:
 ```bash
 mysql -u <user> -p < addresses.sql
 ```
-
-## CSV to MySQL Import Script
-
-**A simple Python script to import a CSV file into an existing MySQL table.**
-
-This script does **not** create or drop tables—it only inserts data. It handles `NaN` values and processes rows in batches to avoid memory issues.
-
----
 
 ### Features
 
