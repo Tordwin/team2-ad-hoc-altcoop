@@ -403,6 +403,70 @@
                             <td><input type="radio" name="leadership_12" value="agree" personality-score="4"></td>
                             <td><input type="radio" name="leadership_12" value="strong_agree" personality-score="5"></td>
                         </tr>
+                        <tr>
+                            <td>I adapt quickly to unexpected changes.</td>
+                            <td><input type="radio" name="leadership_13" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_13" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_13" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_13" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_13" value="strong_agree" personality-score="5"></td>
+                        </tr>
+                        <tr>
+                            <td>I prefer setting clear goals and milestones for my work.</td>
+                            <td><input type="radio" name="leadership_14" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_14" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_14" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_14" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_14" value="strong_agree" personality-score="5"></td>
+                        </tr>
+                        <tr>
+                            <td>I prefer collaborating with others than alone.</td>
+                            <td><input type="radio" name="leadership_15" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_15" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_15" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_15" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_15" value="strong_agree" personality-score="5"></td>
+                        </tr>
+                        <tr>
+                            <td>I am open to learning new tools and improving efficiency.</td>
+                            <td><input type="radio" name="leadership_16" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_16" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_16" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_16" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_16" value="strong_agree" personality-score="5"></td>
+                        </tr>
+                        <tr>
+                            <td>I enjoy challenging myself with new risks.</td>
+                            <td><input type="radio" name="leadership_17" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_17" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_17" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_17" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_17" value="strong_agree" personality-score="5"></td>
+                        </tr>
+                        <tr>
+                            <td>I find creative solutions when traditional methods don't work.</td>
+                            <td><input type="radio" name="leadership_18" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_18" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_18" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_18" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_18" value="strong_agree" personality-score="5"></td>
+                        </tr>
+                        <tr>
+                            <td>I enjoy managing and motivating others to improve balance between the team.</td>
+                            <td><input type="radio" name="leadership_19" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_19" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_19" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_19" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_19" value="strong_agree" personality-score="5"></td>
+                        </tr>
+                        <tr>
+                            <td>I can balance multiple priorities without feeling overwhelmed.</td>
+                            <td><input type="radio" name="leadership_20" value="strong_disagree" personality-score="1"></td>
+                            <td><input type="radio" name="leadership_20" value="disagree" personality-score="2"></td>
+                            <td><input type="radio" name="leadership_20" value="neutral" personality-score="3"></td>
+                            <td><input type="radio" name="leadership_20" value="agree" personality-score="4"></td>
+                            <td><input type="radio" name="leadership_20" value="strong_agree" personality-score="5"></td>
+                        </tr>
                     </tbody>
                 </table>
             </section>
