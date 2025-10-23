@@ -21,19 +21,21 @@
                 <input type="text" name="email" required><br><br>
 
                 <label>Major: <span style="color: red;">*</span></label><br>
-                <input type="radio" name="major" value="W&M"> Web And Mobile (WMC)
+                <input type="radio" name="major" value="WMC"> Web And Mobile (WMC)
                 <input type="radio" name="major" value="HCC"> Human-Centered Computing (HCC)
                 <input type="radio" name="major" value="CIT"> Computing And Information Technology (CIT)
-                <input type="radio" name="major" value="other"> Other
-                <input type="text" id="other" name="major" placeholder="Specify your major..." style="display:none;">
+                <input type="radio" name="major" value="Other"> Other
+                <input type="text" id="other" name="other_major" placeholder="Specify your major..." style="display:none;">
                 <script>
                     const other = document.getElementById('other');
                     document.addEventListener('change', function (e) {
                         if (e.target.name === 'major') {
                             if (e.target.value === 'other') {
                                 other.style.display = 'inline';
+                                other.required = true;
                             } else {
                                 other.style.display = 'none';
+                                other.required = false;
                             }
                         }
                     });
@@ -250,42 +252,18 @@
                 <hr>
 
                 <label>Please select the software you are familiar with:</label><br>
-                <span>
-                    <input type="checkbox" name="software_app[]" value="git"><br>Git
-                </span>
-                <span>
-                    <input type="checkbox" name="software_app[]" value="docker"><br>Docker
-                </span>
-                <span>
-                    <input type="checkbox" name="software_app[]" value="vs"><br>Visual Studio
-                </span>
-                <span>
-                    <input type="checkbox" name="software_app[]" value="vscode"><br>Visual Studio Code
-                </span>
-                <span>
-                    <input type="checkbox" name="software_app[]" value="mysql_workbench"><br>MySQL Workbench<br>
-                </span>
-                <span>
-                    <input type="checkbox" name="software_app[]" value="mac"><br>Mac OS
-                </span>
-                <span>
-                    <input type="checkbox" name="software_app[]" value="linux"><br>Linux OS
-                </span>
-                <span>
-                    <input type="checkbox" name="software_app[]" value="windows"><br>Windows OS
-                </span>
-                <span>
-                    <input type="checkbox" name="software_app[]" value="mobile"><br>Mobile OS (Android, IOS)<br>
-                </span>
-                <span>
-                    <input type="checkbox" name="software_app[]" value="jira"><br>Jira
-                </span>
-                <span>
-                    <input type="checkbox" name="software_app[]" value="azure"><br>Azure
-                </span>
-                <span>
-                    <input type="checkbox" name="software_app[]" value="trello"><br>Trello
-                </span>
+                <label><span><input type="checkbox" name="software_app[]" value="git"><br>Git</span></label>
+                <label><span><input type="checkbox" name="software_app[]" value="docker"><br>Docker</span></label>
+                <label><span><input type="checkbox" name="software_app[]" value="vs"><br>Visual Studio</span></label>
+                <label><span><input type="checkbox" name="software_app[]" value="vscode"><br>Visual Studio Code</span></label>
+                <label><span><input type="checkbox" name="software_app[]" value="mysql_workbench"><br>MySQL Workbench<br></span></label>
+                <label><span><input type="checkbox" name="software_app[]" value="mac"><br>Mac OS</span></label>
+                <label><span><input type="checkbox" name="software_app[]" value="linux"><br>Linux OS</span></label>
+                <label><span><input type="checkbox" name="software_app[]" value="windows"><br>Windows OS</span></label>
+                <label><span><input type="checkbox" name="software_app[]" value="mobile"><br>Mobile OS (Android, IOS)<br></span></label>
+                <label><span><input type="checkbox" name="software_app[]" value="jira"><br>Jira</span></label>
+                <label><span><input type="checkbox" name="software_app[]" value="azure"><br>Azure</span></label>
+                <label><span><input type="checkbox" name="software_app[]" value="trello"><br>Trello</span></label>
             </section>
 
             <!--------- END OF SOFTWARE CHECKBOXES ------------------->
