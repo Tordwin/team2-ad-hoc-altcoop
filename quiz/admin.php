@@ -45,10 +45,10 @@
             <section id="table">
                 <table>
                     <tr>
-                        <th>Semester</th>
-                        <th>Section</th>
-                        <th>Name</th>
-                        <th>Major</th>
+                        <th>SEMESTER</th>
+                        <th>SECTION</th>
+                        <th>NAME</th>
+                        <th>MAJOR</th>
                         <th>UX/UI</th>
                         <th>FRONT-END</th>
                         <th>BACK-END</th>
