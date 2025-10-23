@@ -1,0 +1,11 @@
+TRUNCATE TABLE additional;
+TRUNCATE TABLE app_dev;
+TRUNCATE TABLE back_end;
+TRUNCATE TABLE front_end;
+TRUNCATE TABLE gui;
+TRUNCATE TABLE languages;
+TRUNCATE TABLE leader_soft;
+TRUNCATE TABLE software_app;
+TRUNCATE TABLE software_tools;
+TRUNCATE TABLE uxui;
+DELETE FROM stuinfo;
