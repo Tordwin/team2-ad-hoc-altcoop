@@ -175,7 +175,15 @@
         <link rel="stylesheet" href="style.css">
         <script>
             function showCard() {
-                document.getElementById("resultCard").style.display = "block";
+                const card = document.getElementById('resultCard');
+                const button = document.getElementById('resultButton')
+                if (card.style.display === 'none') {
+                    card.style.display = 'block';
+                    button.textContent = 'Hide Results!';
+                } else {
+                    card.style.display = 'none';
+                    button.textContent = 'See Results!';
+                }
             }
         </script>
     </head>
@@ -184,7 +192,7 @@
             <hr>
             <p>Thank you for taking the time to complete this assessment!</p>
             <h2 class="celebrate">🥳</h2>
-            <button onclick="showCard()">See Results!</button>
+            <button id="resultButton" onclick="showCard()">See Results!</button>
         </section>
 
         <section id="resultCard" style="display:none">
