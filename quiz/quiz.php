@@ -20,6 +20,7 @@
                 <label>Email: <span style="color: red;">*</span></label><br>
                 <input type="text" name="email" required><br><br>
 
+                <!-- MAJOR NOT WORKING -->
                 <label>Major: <span style="color: red;">*</span></label><br>
                 <input type="radio" name="major" value="WMC"> Web And Mobile (WMC)
                 <input type="radio" name="major" value="HCC"> Human-Centered Computing (HCC)
