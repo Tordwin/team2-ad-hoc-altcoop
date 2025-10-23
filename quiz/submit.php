@@ -173,19 +173,24 @@
     <head>
         <title>Success!</title>
         <link rel="stylesheet" href="style.css">
+        <script>
+            function showCard() {
+                document.getElementById("resultCard").style.display = "block";
+            }
+        </script>
     </head>
     <body>
         <section>
             <hr>
             <p>Thank you for taking the time to complete this assessment!</p>
             <h2 class="celebrate">🥳</h2>
-            <button onclick="">See Results!</button>
+            <button onclick="showCard()">See Results!</button>
         </section>
 
         <section id="resultCard" style="display:none">
-            <?php echo "<h2>Section #" + $section + "</h2>"; ?>
-            <?php echo "<h1>" + $name + "</h1>"; ?>
-            <?php echo "<h2>" + $major + "</h2>"; ?>
+            <?php echo "<h2>Section #" . $section . "</h2>"; ?>
+            <?php echo "<h1>" . $name . "</h1>"; ?>
+            <?php echo "<h2>" . $major . "</h2>"; ?>
             <h1>Roles</h1>
             <!-- 4 Circles here -->
             <h2>Languages</h2>
