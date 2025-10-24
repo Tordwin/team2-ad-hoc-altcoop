@@ -18,7 +18,7 @@
     $date = $_POST['date'];
 
     //MAJOR NOT WORKING IDK WHY
-    $sql = "INSERT INTO stuinfo (name, email, major, term, section, date) 
+    $sql = "INSERT INTO stuinfo (`name`, `email`, `major`, `term`, `section`, `date`) 
         VALUES (?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ssssis", $name, $email, $major, $term, $section, $date);

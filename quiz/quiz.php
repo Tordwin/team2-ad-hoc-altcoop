@@ -20,11 +20,11 @@
                 <label>Email: <span style="color: red;">*</span></label><br>
                 <input type="text" name="email" required><br><br>
 
-                <!-- MAJOR NOT WORKING -->
                 <label>Major: <span style="color: red;">*</span></label><br>
                 <input type="radio" name="major" value="WMC"> Web And Mobile (WMC)
                 <input type="radio" name="major" value="HCC"> Human-Centered Computing (HCC)
                 <input type="radio" name="major" value="CIT"> Computing And Information Technology (CIT)
+                <!-- OTHER IS NOT WORKING for some reason -->
                 <input type="radio" name="major" value="Other"> Other
                 <input type="text" id="other" name="other_major" placeholder="Specify your major..." style="display:none;">
                 <script>

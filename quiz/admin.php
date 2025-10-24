@@ -9,7 +9,7 @@
     $sql = "";
 
     // GET NAMES
-    $sql = "SELECT name FROM stuinfo";
+    $sql = "SELECT `name` FROM stuinfo";
     $names = $conn->query($sql);
 
     // GET SECTIONS
@@ -21,8 +21,10 @@
     $majors = $conn->query($sql);
 
     // GET DATES
-    $sql = "SELECT date FROM stuinfo";
+    $sql = "SELECT `date` FROM stuinfo";
     $dates = $conn->query($sql);
+
+    //USE FOR LOOP
 ?>
 
 
