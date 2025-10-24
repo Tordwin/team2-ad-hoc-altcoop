@@ -87,3 +87,172 @@ td input{
 #centerSubmission{
     text-align: center;
 }
+
+/* Modal backdrop */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    animation: fadeIn 0.3s ease;
+}
+
+/* Modal box */
+.modal-content {
+    background-color: #fff;
+    margin: 2% auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 70%;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    animation: slideDown 0.4s ease;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: #000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* === RESULT CARD STYLING === */
+.result-header {
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.result-header h1 {
+    font-size: 1.2rem;
+    margin: 0.2em 0;
+}
+
+.result-header h2 {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.2em 0;
+}
+
+.result-section {
+    margin: 1.5em 0;
+}
+
+.result-section h2 {
+    font-size: 1.1rem;
+    border-bottom: 2px solid #f4a75a;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.7em;
+    text-align: left;
+}
+
+/* Role circles */
+.roles {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+
+.role {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.role .circle {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: #f4a75a;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.role span {
+    font-size: 0.8em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 0.3em;
+}
+
+/* Subsections like Languages, Apps, etc. */
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+    text-align: left;
+}
+
+.skill-item {
+    font-size: 0.9rem;
+}
+
+/* Additional Info Box */
+.additional-box {
+    background-color: #ffedca;
+    border-radius: 0.5em;
+    padding: 1em;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Expand button */
+.expand-btn {
+    display: block;
+    margin: 1.2em auto 0 auto;
+    background-color: #f4a75a;
+    color: white;
+    border: none;
+    padding: 0.7em 1.2em;
+    border-radius: 0.6em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.expand-btn:hover {
+    background-color: #ea8e33;
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+        margin-top: 20%;
+        padding: 1.5em;
+    }
+
+    .circle {
+        width: 2.5em;
+        height: 2.5em;
+        font-size: 1em;
+    }
+
+    .skill-list {
+        grid-template-columns: 1fr;
+    }
+}
+

@@ -174,15 +174,19 @@
         <title>Success!</title>
         <link rel="stylesheet" href="style.css">
         <script>
-            function showCard() {
-                const card = document.getElementById('resultCard');
-                const button = document.getElementById('resultButton')
-                if (card.style.display === 'none') {
-                    card.style.display = 'block';
-                    button.textContent = 'Hide Results!';
-                } else {
-                    card.style.display = 'none';
-                    button.textContent = 'See Results!';
+            function openModal() {
+                document.getElementById("resultModal").style.display = "block";
+            }
+
+            function closeModal() {
+                document.getElementById("resultModal").style.display = "none";
+            }
+
+            // Optional: close when clicking outside
+            window.onclick = function(event) {
+                const modal = document.getElementById("resultModal");
+                if (event.target === modal) {
+                    modal.style.display = "none";
                 }
             }
         </script>
@@ -192,26 +196,98 @@
             <hr>
             <p>Thank you for taking the time to complete this assessment!</p>
             <h2 class="celebrate">🥳</h2>
-            <button id="resultButton" onclick="showCard()">See Results!</button>
+            <button id="resultButton" onclick="openModal()">See Results!</button>
         </section>
 
-        <section id="resultCard" style="display:none">
-            <?php echo "<h2>Section #" . $section . "</h2>"; ?>
-            <?php echo "<h1>" . $name . "</h1>"; ?>
-            <?php echo "<h2>" . $major . "</h2>"; ?>
-            <h1>Roles</h1>
-            <!-- 4 Circles here -->
-            <h2>Languages</h2>
-            <h2>Apps</h2>
-            <h2>Leadership</h2>
-            <h2>Additional Information</h2>
-        </section>
+        <div id="resultModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
 
+                <div class="result-header">
+                    <h2>Section #<?= htmlspecialchars($section) ?></h2>
+                    <h1><?= htmlspecialchars($name) ?></h1>
+                    <h2><?= htmlspecialchars($major) ?></h2>
+                </div>
+
+                <!-- LANGUAGES -->
+                <div class="result-section">
+                    <h2>Languages</h2>
+                    <div class="skill-list">
+                        <?php
+                            $langs = [
+                                "HTML" => $_POST['html'] ?? '',
+                                "CSS" => $_POST['css'] ?? '',
+                                "Python" => $_POST['python'] ?? '',
+                                "PHP" => $_POST['php'] ?? '',
+                                "JavaScript" => $_POST['javascript'] ?? '',
+                                "Java" => $_POST['java'] ?? '',
+                                "C" => $_POST['c'] ?? '',
+                                "C#" => $_POST['csharp'] ?? '',
+                                "C++" => $_POST['cplusplus'] ?? ''
+                            ];
+                            foreach ($langs as $lang => $level) {
+                            if (!empty($level)) {
+                                echo "<div class='skill-item'>$lang – " . ucfirst(str_replace('_', ' ', $level)) . "</div>";
+                            }
+                            }
+                        ?>
+                    </div>
+                </div>
+
+                <!-- SOFTWARE APPLICATIONS -->
+                <div class="result-section">
+                    <h2>Software Applications</h2>
+                    <div class="skill-list">
+                        <?php
+                            if (!empty($_POST['software_app'])) {
+                            foreach ($_POST['software_app'] as $app) {
+                                echo "<div class='skill-item'>" . ucfirst(str_replace('_', ' ', $app)) . "</div>";
+                            }
+                            } else {
+                            echo "<div class='skill-item'>None selected</div>";
+                            }
+                        ?>
+                    </div>
+                </div>
+
+                <!-- LEADERSHIP -->
+                <div class="result-section">
+                    <h2>Leadership & Soft Skills</h2>
+                    <div class="roles">
+                        <?php
+                            $traits = [
+                                "Communication" => $_POST['leadership_5'] ?? '',
+                                "Teamwork" => $_POST['leadership_15'] ?? '',
+                                "Leadership" => $_POST['leadership_2'] ?? ''
+                            ];
+                            foreach ($traits as $trait => $score) {
+                                if (!empty($score)) {
+                                    echo "<div class='role'><div class='circle'>" . substr($score, -1) . "</div><span>$trait</span></div>";
+                                }
+                            }
+                        ?>
+                    </div>
+                </div>
+
+                <!-- ADDITIONAL -->
+                <div class="result-section">
+                    <h2>Additional Information</h2>
+                    <div class="additional-box">
+                        <?= !empty($_POST['additional_1']) ? htmlspecialchars($_POST['additional_1']) : "No additional info provided." ?>
+                    </div>
+                </div>
+
+                <button class="expand-btn">Expand</button>
+            </div>
+        </div>
+
+        
         <section id="centerSubmission">
             <h2 class="celebrate">🥳</h2>
             <h1>Successfully Submitted 🎉</h1>
             <hr>
             <p>Thank you for taking the time to complete this assessment!</p>
         </section>
+
     </body>
 </html>
