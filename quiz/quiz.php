@@ -25,7 +25,7 @@
                 <input type="radio" name="major" value="HCC"> Human-Centered Computing (HCC)
                 <input type="radio" name="major" value="CIT"> Computing And Information Technology (CIT)
                 <!-- OTHER IS NOT WORKING for some reason -->
-                <input type="radio" name="major" value="Other"> Other
+                <input type="radio" name="major" value="other"> Other
                 <input type="text" id="other" name="other_major" placeholder="Specify your major..." style="display:none;">
                 <script>
                     const other = document.getElementById('other');
