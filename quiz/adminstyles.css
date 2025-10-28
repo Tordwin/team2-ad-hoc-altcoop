@@ -1,0 +1,44 @@
+body{
+    background-color: #F4A75A;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section{
+    background-color: white;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 1em;
+}
+
+label{
+    font-size:20px;
+}
+
+span{
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
+
+th{
+    padding: .5em;
+    text-align: center;
+}
+
+td input{
+    display: block;
+    margin: auto;
+}
+
+.resultWrapper {
+    display:flex;
+    gap: 20px;
+}
+
+/* #sortBar input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+} */
