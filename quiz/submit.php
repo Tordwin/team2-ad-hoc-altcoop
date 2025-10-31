@@ -167,7 +167,41 @@
     // CLOSE CONNECTION
     $stmt->close();
     $conn->close();
+
+    $leadership_vals = [
+    $_POST['leadership_2'] ?? 0,
+    $_POST['leadership_7'] ?? 0,
+    $_POST['leadership_19'] ?? 0
+    ];
+
+    $communication_vals = [
+        $_POST['leadership_5'] ?? 0,
+        $_POST['leadership_13'] ?? 0
+    ];
+
+    $teamwork_vals = [
+        $_POST['leadership_8'] ?? 0,
+        $_POST['leadership_9'] ?? 0,
+        $_POST['leadership_10'] ?? 0,
+        $_POST['leadership_15'] ?? 0
+    ];
+
+    // Convert any string numbers to floats
+    $leadership_vals = array_map('floatval', $leadership_vals);
+    $communication_vals = array_map('floatval', $communication_vals);
+    $teamwork_vals = array_map('floatval', $teamwork_vals);
+
+    // Helper function
+    function average($arr) {
+        $valid = array_filter($arr, fn($v) => $v > 0);
+        return count($valid) ? round(array_sum($valid) / count($valid), 2) : 0;
+    }
+
+    $leadership_avg = average($leadership_vals);
+    $communication_avg = average($communication_vals);
+    $teamwork_avg = average($teamwork_vals);
 ?>
+
 
 <html>
     <head>
@@ -254,20 +288,12 @@
                 <div class="result-section">
                     <h2>Leadership & Soft Skills</h2>
                     <div class="roles">
-                        <?php
-                            $traits = [
-                                "Communication" => $_POST['leadership_5'] ?? '',
-                                "Teamwork" => $_POST['leadership_15'] ?? '',
-                                "Leadership" => $_POST['leadership_2'] ?? ''
-                            ];
-                            foreach ($traits as $trait => $score) {
-                                if (!empty($score)) {
-                                    echo "<div class='role'><div class='circle'>" . substr($score, -1) . "</div><span>$trait</span></div>";
-                                }
-                            }
-                        ?>
+                        <div class="role"><div class="circle"><?= $leadership_avg ?></div><span>Leadership</span></div>
+                        <div class="role"><div class="circle"><?= $communication_avg ?></div><span>Communication</span></div>
+                        <div class="role"><div class="circle"><?= $teamwork_avg ?></div><span>Teamwork</span></div>
                     </div>
                 </div>
+
 
                 <!-- ADDITIONAL -->
                 <div class="result-section">
