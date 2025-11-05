@@ -459,39 +459,39 @@
                 <hr>
 
                 <label>How well is your front-end development skills?</label><br>
-                <input type="radio" name="front_end_1" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="front_end_1" value="Novice" data-score="2"> Novice
-                <input type="radio" name="front_end_1" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="front_end_1" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="front_end_1" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="front_end_1" value=1 data-score="1"> Beginner
+                <input type="radio" name="front_end_1" value=2 data-score="2"> Novice
+                <input type="radio" name="front_end_1" value=3 data-score="3"> Intermediate
+                <input type="radio" name="front_end_1" value=4 data-score="4"> Advanced
+                <input type="radio" name="front_end_1" value=5 data-score="5"> Expert<br><br>
                 
                 <label>How comfortable are you in utilizing HTML and CSS in the creation of a web page</label><br>
-                <input type="radio" name="front_end_2" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="front_end_2" value="Novice" data-score="2"> Novice
-                <input type="radio" name="front_end_2" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="front_end_2" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="front_end_2" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="front_end_2" value=1 data-score="1"> Beginner
+                <input type="radio" name="front_end_2" value=2 data-score="2"> Novice
+                <input type="radio" name="front_end_2" value=3 data-score="3"> Intermediate
+                <input type="radio" name="front_end_2" value=4 data-score="4"> Advanced
+                <input type="radio" name="front_end_2" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you in the creation of JavaScript scripts?</label><br>
-                <input type="radio" name="front_end_3" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="front_end_3" value="Novice" data-score="2"> Novice
-                <input type="radio" name="front_end_3" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="front_end_3" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="front_end_3" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="front_end_3" value=1 data-score="1"> Beginner
+                <input type="radio" name="front_end_3" value=2 data-score="2"> Novice
+                <input type="radio" name="front_end_3" value=3 data-score="3"> Intermediate
+                <input type="radio" name="front_end_3" value=4 data-score="4"> Advanced
+                <input type="radio" name="front_end_3" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you with creating pages in PHP</label><br>
-                <input type="radio" name="front_end_4" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="front_end_4" value="Novice" data-score="2"> Novice
-                <input type="radio" name="front_end_4" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="front_end_4" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="front_end_4" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="front_end_4" value=1 data-score="1"> Beginner
+                <input type="radio" name="front_end_4" value=2 data-score="2"> Novice
+                <input type="radio" name="front_end_4" value=3 data-score="3"> Intermediate
+                <input type="radio" name="front_end_4" value=4 data-score="4"> Advanced
+                <input type="radio" name="front_end_4" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you with creating and processing interactable elements on a web page? (Data submissions, quizzes, drop downs, and menus)</label><br>
-                <input type="radio" name="front_end_5" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="front_end_5" value="Novice" data-score="2"> Novice
-                <input type="radio" name="front_end_5" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="front_end_5" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="front_end_5" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="front_end_5" value=1 data-score="1"> Beginner
+                <input type="radio" name="front_end_5" value=2 data-score="2"> Novice
+                <input type="radio" name="front_end_5" value=3 data-score="3"> Intermediate
+                <input type="radio" name="front_end_5" value=4 data-score="4"> Advanced
+                <input type="radio" name="front_end_5" value=5 data-score="5"> Expert<br><br>
             </section>
             
             <!----------- END OF FRONT-END QUESTIONS ------------------>
@@ -503,39 +503,39 @@
                 <hr>
                 
                 <label>How well is your back-end development skills?</label><br>
-                <input type="radio" name="back_end_1" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="back_end_1" value="Novice" data-score="2"> Novice
-                <input type="radio" name="back_end_1" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="back_end_1" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="back_end_1" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="back_end_1" value=1 data-score="1"> Beginner
+                <input type="radio" name="back_end_1" value=2 data-score="2"> Novice
+                <input type="radio" name="back_end_1" value=3 data-score="3"> Intermediate
+                <input type="radio" name="back_end_1" value=4 data-score="4"> Advanced
+                <input type="radio" name="back_end_1" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you with creating a database from provided data?</label><br>
-                <input type="radio" name="back_end_2" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="back_end_2" value="Novice" data-score="2"> Novice
-                <input type="radio" name="back_end_2" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="back_end_2" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="back_end_2" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="back_end_2" value=1 data-score="1"> Beginner
+                <input type="radio" name="back_end_2" value=2 data-score="2"> Novice
+                <input type="radio" name="back_end_2" value=3 data-score="3"> Intermediate
+                <input type="radio" name="back_end_2" value=4 data-score="4"> Advanced
+                <input type="radio" name="back_end_2" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you with loading and manipulating databases?</label><br>
-                <input type="radio" name="back_end_3" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="back_end_3" value="Novice" data-score="2"> Novice
-                <input type="radio" name="back_end_3" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="back_end_3" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="back_end_3" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="back_end_3" value=1 data-score="1"> Beginner
+                <input type="radio" name="back_end_3" value=2 data-score="2"> Novice
+                <input type="radio" name="back_end_3" value=3 data-score="3"> Intermediate
+                <input type="radio" name="back_end_3" value=4 data-score="4"> Advanced
+                <input type="radio" name="back_end_3" value=5 data-score="5"> Expert<br><br>
 
                 <label>How is your bug detection skills?</label><br>
-                <input type="radio" name="back_end_4" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="back_end_4" value="Novice" data-score="2"> Novice
-                <input type="radio" name="back_end_4" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="back_end_4" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="back_end_4" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="back_end_4" value=1 data-score="1"> Beginner
+                <input type="radio" name="back_end_4" value=2 data-score="2"> Novice
+                <input type="radio" name="back_end_4" value=3 data-score="3"> Intermediate
+                <input type="radio" name="back_end_4" value=4 data-score="4"> Advanced
+                <input type="radio" name="back_end_4" value=5 data-score="5"> Expert<br><br>
 
                 <label>How well is your database development skills?</label><br>
-                <input type="radio" name="back_end_5" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="back_end_5" value="Novice" data-score="2"> Novice
-                <input type="radio" name="back_end_5" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="back_end_5" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="back_end_5" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="back_end_5" value=1 data-score="1"> Beginner
+                <input type="radio" name="back_end_5" value=2 data-score="2"> Novice
+                <input type="radio" name="back_end_5" value=3 data-score="3"> Intermediate
+                <input type="radio" name="back_end_5" value=4 data-score="4"> Advanced
+                <input type="radio" name="back_end_5" value=5 data-score="5"> Expert<br><br>
             </section>
 
             <!----------- END OF BACK-END QUESTIONS ------------------->
@@ -547,18 +547,18 @@
                 <hr>
 
                 <label>How well is your GUI development skills?</label><br>
-                <input type="radio" name="gui_1" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="gui_1" value="Novice" data-score="2"> Novice
-                <input type="radio" name="gui_1" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="gui_1" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="gui_1" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="gui_1" value=1 data-score="1"> Beginner
+                <input type="radio" name="gui_1" value=2 data-score="2"> Novice
+                <input type="radio" name="gui_1" value=3 data-score="3"> Intermediate
+                <input type="radio" name="gui_1" value=4 data-score="4"> Advanced
+                <input type="radio" name="gui_1" value=5 data-score="5"> Expert<br><br>
 
                 <label>How would you rate your skills in GUI development?</label><br>
-                <input type="radio" name="gui_2" value="Weakest" data-score="1"> Weakest
-                <input type="radio" name="gui_2" value="Weak" data-score="2"> Weak
-                <input type="radio" name="gui_2" value="Neutral" data-score="3"> Neutral
-                <input type="radio" name="gui_2" value="Strong" data-score="4"> Strong
-                <input type="radio" name="gui_2" value="Strongest" data-score="5"> Strongest<br><br>
+                <input type="radio" name="gui_2" value=1 data-score="1"> Weakest
+                <input type="radio" name="gui_2" value=2 data-score="2"> Weak
+                <input type="radio" name="gui_2" value=3 data-score="3"> Neutral
+                <input type="radio" name="gui_2" value=4 data-score="4"> Strong
+                <input type="radio" name="gui_2" value=5 data-score="5"> Strongest<br><br>
             </section>
 
             <!----------- END OF GUI QUESTIONS ------------------------>
@@ -570,39 +570,39 @@
                 <hr>
 
                 <label>How well is your UX/UI design skills?</label><br>
-                <input type="radio" name="uxui_1" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="uxui_1" value="Novice" data-score="2"> Novice
-                <input type="radio" name="uxui_1" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="uxui_1" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="uxui_1" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="uxui_1" value=1 data-score="1"> Beginner
+                <input type="radio" name="uxui_1" value=2 data-score="2"> Novice
+                <input type="radio" name="uxui_1" value=3 data-score="3"> Intermediate
+                <input type="radio" name="uxui_1" value=4 data-score="4"> Advanced
+                <input type="radio" name="uxui_1" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you with wire framing and prototyping?</label><br>
-                <input type="radio" name="uxui_2" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="uxui_2" value="Novice" data-score="2"> Novice
-                <input type="radio" name="uxui_2" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="uxui_2" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="uxui_2" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="uxui_2" value=1 data-score="1"> Beginner
+                <input type="radio" name="uxui_2" value=2 data-score="2"> Novice
+                <input type="radio" name="uxui_2" value=3 data-score="3"> Intermediate
+                <input type="radio" name="uxui_2" value=4 data-score="4"> Advanced
+                <input type="radio" name="uxui_2" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you with usability testing?</label><br>
-                <input type="radio" name="uxui_3" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="uxui_3" value="Novice" data-score="2"> Novice
-                <input type="radio" name="uxui_3" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="uxui_3" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="uxui_3" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="uxui_3" value=1 data-score="1"> Beginner
+                <input type="radio" name="uxui_3" value=2 data-score="2"> Novice
+                <input type="radio" name="uxui_3" value=3 data-score="3"> Intermediate
+                <input type="radio" name="uxui_3" value=4 data-score="4"> Advanced
+                <input type="radio" name="uxui_3" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you with user interviews?</label><br>
-                <input type="radio" name="uxui_4" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="uxui_4" value="Novice" data-score="2"> Novice
-                <input type="radio" name="uxui_4" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="uxui_4" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="uxui_4" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="uxui_4" value=1 data-score="1"> Beginner
+                <input type="radio" name="uxui_4" value=2 data-score="2"> Novice
+                <input type="radio" name="uxui_4" value=3 data-score="3"> Intermediate
+                <input type="radio" name="uxui_4" value=4 data-score="4"> Advanced
+                <input type="radio" name="uxui_4" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you with UI design?</label><br>
-                <input type="radio" name="uxui_5" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="uxui_5" value="Novice" data-score="2"> Novice
-                <input type="radio" name="uxui_5" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="uxui_5" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="uxui_5" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="uxui_5" value=1 data-score="1"> Beginner
+                <input type="radio" name="uxui_5" value=2 data-score="2"> Novice
+                <input type="radio" name="uxui_5" value=3 data-score="3"> Intermediate
+                <input type="radio" name="uxui_5" value=4 data-score="4"> Advanced
+                <input type="radio" name="uxui_5" value=5 data-score="5"> Expert<br><br>
             </section>
 
             <!----------- END OF UX/UI QUESTIONS --------------------->
@@ -614,39 +614,39 @@
                 <hr>
                 
                 <label>How well is your app development?</label><br>
-                <input type="radio" name="app_dev_1" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="app_dev_1" value="Novice" data-score="2"> Novice
-                <input type="radio" name="app_dev_1" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="app_dev_1" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="app_dev_1" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="app_dev_1" value=1 data-score="1"> Beginner
+                <input type="radio" name="app_dev_1" value=2 data-score="2"> Novice
+                <input type="radio" name="app_dev_1" value=3 data-score="3"> Intermediate
+                <input type="radio" name="app_dev_1" value=4 data-score="4"> Advanced
+                <input type="radio" name="app_dev_1" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you in development of an Apple application? (Swift)</label> <br>
-                <input type="radio" name="app_dev_2" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="app_dev_2" value="Novice" data-score="2"> Novice
-                <input type="radio" name="app_dev_2" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="app_dev_2" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="app_dev_2" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="app_dev_2" value=1 data-score="1"> Beginner
+                <input type="radio" name="app_dev_2" value=2 data-score="2"> Novice
+                <input type="radio" name="app_dev_2" value=3 data-score="3"> Intermediate
+                <input type="radio" name="app_dev_2" value=4 data-score="4"> Advanced
+                <input type="radio" name="app_dev_2" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you in development of a Samsung application? (Kotlin)</label><br>
-                <input type="radio" name="app_dev_3" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="app_dev_3" value="Novice" data-score="2"> Novice
-                <input type="radio" name="app_dev_3" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="app_dev_3" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="app_dev_3" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="app_dev_3" value=1 data-score="1"> Beginner
+                <input type="radio" name="app_dev_3" value=2 data-score="2"> Novice
+                <input type="radio" name="app_dev_3" value=3 data-score="3"> Intermediate
+                <input type="radio" name="app_dev_3" value=4 data-score="4"> Advanced
+                <input type="radio" name="app_dev_3" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you developing a cross-platform mobile application for both Samsung and Apple? (Dart via Flutter)</label><br>
-                <input type="radio" name="app_dev_4" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="app_dev_4" value="Novice" data-score="2"> Novice
-                <input type="radio" name="app_dev_4" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="app_dev_4" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="app_dev_4" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="app_dev_4" value=1 data-score="1"> Beginner
+                <input type="radio" name="app_dev_4" value=2 data-score="2"> Novice
+                <input type="radio" name="app_dev_4" value=3 data-score="3"> Intermediate
+                <input type="radio" name="app_dev_4" value=4 data-score="4"> Advanced
+                <input type="radio" name="app_dev_4" value=5 data-score="5"> Expert<br><br>
 
                 <label>How comfortable are you in developing a web application?</label><br>
-                <input type="radio" name="app_dev_5" value="Beginner" data-score="1"> Beginner
-                <input type="radio" name="app_dev_5" value="Novice" data-score="2"> Novice
-                <input type="radio" name="app_dev_5" value="Intermediate" data-score="3"> Intermediate
-                <input type="radio" name="app_dev_5" value="Advanced" data-score="4"> Advanced
-                <input type="radio" name="app_dev_5" value="Expert" data-score="5"> Expert<br><br>
+                <input type="radio" name="app_dev_5" value=1 data-score="1"> Beginner
+                <input type="radio" name="app_dev_5" value=2 data-score="2"> Novice
+                <input type="radio" name="app_dev_5" value=3 data-score="3"> Intermediate
+                <input type="radio" name="app_dev_5" value=4 data-score="4"> Advanced
+                <input type="radio" name="app_dev_5" value=5 data-score="5"> Expert<br><br>
             </section>
 
             <!----------- END OF APP DEVELOPMENT QUESTIONS ----------->
