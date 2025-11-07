@@ -164,10 +164,6 @@
     $stmt->bind_param("ss", $email, $addquestion1);
     $stmt->execute();
 
-    // CLOSE CONNECTION
-    $stmt->close();
-    $conn->close();
-
     $leadership_vals = [
     $_POST['leadership_2'] ?? 0,
     $_POST['leadership_7'] ?? 0,
@@ -200,6 +196,56 @@
     $leadership_avg = average($leadership_vals);
     $communication_avg = average($communication_vals);
     $teamwork_avg = average($teamwork_vals);
+
+    // FRONT-END AVERAGE (5 questions)
+    $frontend_vals = [
+        $_POST['front_end_1'] ?? 0,
+        $_POST['front_end_2'] ?? 0,
+        $_POST['front_end_3'] ?? 0,
+        $_POST['front_end_4'] ?? 0,
+        $_POST['front_end_5'] ?? 0
+    ];
+    $frontend_vals = array_map('floatval', $frontend_vals);
+    $frontend_avg = average($frontend_vals);
+
+    // BACK-END AVERAGE (5 questions)
+    $backend_vals = [
+        $_POST['back_end_1'] ?? 0,
+        $_POST['back_end_2'] ?? 0,
+        $_POST['back_end_3'] ?? 0,
+        $_POST['back_end_4'] ?? 0,
+        $_POST['back_end_5'] ?? 0
+    ];
+    $backend_vals = array_map('floatval', $backend_vals);
+    $backend_avg = average($backend_vals);
+
+    // UX/UI AVERAGE (5 questions)
+    $uxui_vals = [
+        $_POST['uxui_1'] ?? 0,
+        $_POST['uxui_2'] ?? 0,
+        $_POST['uxui_3'] ?? 0,
+        $_POST['uxui_4'] ?? 0,
+        $_POST['uxui_5'] ?? 0
+    ];
+    $uxui_vals = array_map('floatval', $uxui_vals);
+    $uxui_avg = average($uxui_vals);
+
+    // APP DEV AVERAGE (5 questions)
+    $appdev_vals = [
+        $_POST['app_dev_1'] ?? 0,
+        $_POST['app_dev_2'] ?? 0,
+        $_POST['app_dev_3'] ?? 0,
+        $_POST['app_dev_4'] ?? 0,
+        $_POST['app_dev_5'] ?? 0
+    ];
+    $appdev_vals = array_map('floatval', $appdev_vals);
+    $appdev_avg = average($appdev_vals);
+
+    // Insert these values (ux/ui, front-end, back-end, app-dev) in a new table
+
+    // CLOSE CONNECTION
+    $stmt->close();
+    $conn->close();
 ?>
 
 
