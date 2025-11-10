@@ -40,6 +40,12 @@
         $data[] = $row;
     }
 
+    $sql = "SELECT * FROM averages";
+    $result = $conn->query($sql);
+    $avg = [];
+    while ($row = $result->fetch_assoc()) {
+        $avg[] = $row;
+    }
 ?>
 
 <html>
@@ -87,12 +93,12 @@
                                 echo "<td>" . $data[$i]['section'] . "</td>";
                                 echo "<td>" . $data[$i]['name'] . "</td>";
                                 echo "<td>" . $data[$i]['major'] . "</td>";
-                                // echo "<td>" . $data[$i]['ux_ui'] . "</td>";
-                                // echo "<td>" . $data[$i]['front_end'] . "</td>";
-                                // echo "<td>" . $data[$i]['back_end'] . "</td>";
-                                // echo "<td>" . $data[$i]['app_dev'] . "</td>";
-                                // echo "<td>" . $data[$i]['leadership'] . "</td>";
-                                // echo "<td>" . $data[$i]['date'] . "</td>";
+                                echo "<td>" . $avg[$i]['uxui_avg'] . "</td>";
+                                echo "<td>" . $avg[$i]['front-end_avg'] . "</td>";
+                                echo "<td>" . $avg[$i]['back-end_avg'] . "</td>";
+                                echo "<td>" . $avg[$i]['app-dev_avg'] . "</td>";
+                                echo "<td>" . $avg[$i]['leadership_avg'] . "</td>";
+                                echo "<td>" . $data[$i]['date'] . "</td>";
                                 echo "</tr>";
                             }                            
                         ?>

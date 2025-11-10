@@ -8,4 +8,5 @@ TRUNCATE TABLE leader_soft;
 TRUNCATE TABLE software_app;
 TRUNCATE TABLE software_tools;
 TRUNCATE TABLE uxui;
+TRUNCATE TABLE averages;
 DELETE FROM stuinfo;

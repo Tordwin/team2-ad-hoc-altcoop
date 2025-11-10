@@ -164,6 +164,8 @@
     $stmt->bind_param("ss", $email, $addquestion1);
     $stmt->execute();
 
+    // LEADERSHIP AVERAGE
+
     $leadership_vals = [
     $_POST['leadership_2'] ?? 0,
     $_POST['leadership_7'] ?? 0,
@@ -242,6 +244,11 @@
     $appdev_avg = average($appdev_vals);
 
     // Insert these values (ux/ui, front-end, back-end, app-dev) in a new table
+    $sql = "INSERT INTO averages (email, uxui_avg, `front-end_avg`, `back-end_avg`, `app-dev_avg`, `leadership_avg`)
+        VALUES (?, ?, ?, ?, ?, ?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("sddddd", $email, $uxui_avg, $frontend_avg, $backend_avg, $appdev_avg, $leadership_avg);
+    $stmt->execute();
 
     // CLOSE CONNECTION
     $stmt->close();
