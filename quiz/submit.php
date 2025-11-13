@@ -17,7 +17,10 @@
     $section = $_POST['sectionNum'];
     $date = $_POST['date'];
 
-    //MAJOR NOT WORKING IDK WHY
+    // CHECKING POST ENTRIES
+    var_dump($_POST);
+
+    // MAJOR
     $sql = "INSERT INTO stuinfo (`name`, `email`, `major`, `term`, `section`, `date`) 
         VALUES (?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);

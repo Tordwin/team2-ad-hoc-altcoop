@@ -25,26 +25,16 @@
     }
 
     // GET DATA
-    $answer_to_number = [
-        "Not at all" => 1,
-        "Not proficient" => 2,
-        "Proficient" => 3,
-        "Very proficient" => 4,
-        "Fluent" => 5,
-    ];
-
-    $sql = "SELECT `name`, major, term, section, `date` FROM stuinfo";
+    $sql = "SELECT stuinfo.name, stuinfo.major, stuinfo.term, stuinfo.section, stuinfo.date,
+                averages.`uxui_avg`, averages.`front-end_avg`, averages.`back-end_avg`,
+                averages.`app-dev_avg`, averages.`leadership_avg`
+            FROM stuinfo
+            LEFT JOIN averages USING (email)
+            ORDER BY stuinfo.term DESC";
     $result = $conn->query($sql);
     $data = [];
     while ($row = $result->fetch_assoc()) {
         $data[] = $row;
-    }
-
-    $sql = "SELECT * FROM averages";
-    $result = $conn->query($sql);
-    $avg = [];
-    while ($row = $result->fetch_assoc()) {
-        $avg[] = $row;
     }
 ?>
 
@@ -87,20 +77,20 @@
                             <th>DATE-ADDED</th>
                         </tr>
                         <?php
-                            for ($i = 0; $i < count($data); $i++) {
+                            foreach ($data as $row) {
                                 echo "<tr>";
-                                echo "<td>" . $data[$i]['term'] . "</td>";
-                                echo "<td>" . $data[$i]['section'] . "</td>";
-                                echo "<td>" . $data[$i]['name'] . "</td>";
-                                echo "<td>" . $data[$i]['major'] . "</td>";
-                                echo "<td>" . $avg[$i]['uxui_avg'] . "</td>";
-                                echo "<td>" . $avg[$i]['front-end_avg'] . "</td>";
-                                echo "<td>" . $avg[$i]['back-end_avg'] . "</td>";
-                                echo "<td>" . $avg[$i]['app-dev_avg'] . "</td>";
-                                echo "<td>" . $avg[$i]['leadership_avg'] . "</td>";
-                                echo "<td>" . $data[$i]['date'] . "</td>";
+                                echo "<td>{$row['term']}</td>";
+                                echo "<td>{$row['section']}</td>";
+                                echo "<td>{$row['name']}</td>";
+                                echo "<td>{$row['major']}</td>";
+                                echo "<td>{$row['uxui_avg']}</td>";
+                                echo "<td>{$row['front-end_avg']}</td>";
+                                echo "<td>{$row['back-end_avg']}</td>";
+                                echo "<td>{$row['app-dev_avg']}</td>";
+                                echo "<td>{$row['leadership_avg']}</td>";
+                                echo "<td>{$row['date']}</td>";
                                 echo "</tr>";
-                            }                            
+                            }                        
                         ?>
                     </table>
                 </div>
