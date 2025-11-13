@@ -36,6 +36,23 @@
     while ($row = $result->fetch_assoc()) {
         $data[] = $row;
     }
+
+    // TABLE
+    $table = "";
+    foreach ($data as $row) {
+        $table .= "<tr>";
+        $table .="<td>{$row['term']}</td>";
+        $table .="<td>{$row['section']}</td>";
+        $table .="<td>{$row['name']}</td>";
+        $table .="<td>{$row['major']}</td>";
+        $table .="<td>{$row['uxui_avg']}</td>";
+        $table .="<td>{$row['front-end_avg']}</td>";
+        $table .="<td>{$row['back-end_avg']}</td>";
+        $table .="<td>{$row['app-dev_avg']}</td>";
+        $table .="<td>{$row['leadership_avg']}</td>";
+        $table .="<td>{$row['date']}</td>";
+        $table .="</tr>";
+    }         
 ?>
 
 <html>
@@ -77,20 +94,7 @@
                             <th>DATE-ADDED</th>
                         </tr>
                         <?php
-                            foreach ($data as $row) {
-                                echo "<tr>";
-                                echo "<td>{$row['term']}</td>";
-                                echo "<td>{$row['section']}</td>";
-                                echo "<td>{$row['name']}</td>";
-                                echo "<td>{$row['major']}</td>";
-                                echo "<td>{$row['uxui_avg']}</td>";
-                                echo "<td>{$row['front-end_avg']}</td>";
-                                echo "<td>{$row['back-end_avg']}</td>";
-                                echo "<td>{$row['app-dev_avg']}</td>";
-                                echo "<td>{$row['leadership_avg']}</td>";
-                                echo "<td>{$row['date']}</td>";
-                                echo "</tr>";
-                            }                        
+                            echo $table;        
                         ?>
                     </table>
                 </div>
