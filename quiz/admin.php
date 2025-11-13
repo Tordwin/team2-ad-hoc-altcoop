@@ -65,19 +65,21 @@
             <h2 style="font-size:48px">Results</h2>
             <div class="resultWrapper">
                 <div class="sortBar">
-                    <h2 style="font-size:20px">FILTER BY</h2>
-                    <h3>Semester</h3>
-                    <?php
-                        foreach ($semesters as $semester) {
-                            echo "<label><input type='radio' name='semester' value='$semester'> $semester</label><br>";
-                        }
-                    ?>
-                    <h3>Major</h3>
-                    <?php
-                        foreach ($majors as $major) {
-                            echo "<label><input type='radio' name='major' value='$major'> $major</label><br>";
-                        }
-                    ?>
+                    <form method="POST" action="filter.php">
+                        <h2 style="font-size:20px">FILTER BY</h2>
+                        <h3>Semester</h3>
+                        <?php
+                            foreach ($semesters as $semester) {
+                                echo "<label><input type='radio' name='semester' value='$semester' onchange='this.form.submit()'> $semester</label><br>";
+                            }
+                        ?>
+                        <h3>Major</h3>
+                        <?php
+                            foreach ($majors as $major) {
+                                echo "<label><input type='radio' name='major' value='$major' onchange='this.form.submit()> $major</label><br>";
+                            }
+                        ?>
+                    </form>
                 </div>
                 <div id="table">
                     <table>
