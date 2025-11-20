@@ -24,6 +24,22 @@
         $majors[] = $row['major'];
     }
 
+    // GET SECTIONS
+    $sections = [];
+    $sql = "SELECT DISTINCT section FROM stuinfo ORDER BY section";
+    $sectionData = $conn->query($sql);
+    while ($row = $sectionData->fetch_assoc()) {
+        $sections[] = $row['section'];
+    }
+
+    // GET DATES
+    $dates = [];
+    $sql = "SELECT DISTINCT date FROM stuinfo ORDER BY date";
+    $dateData = $conn->query($sql);
+    while ($row = $dateData->fetch_assoc()) {
+        $dates[] = $row['date'];
+    }
+
     // GET DATA
     $sql = "SELECT stuinfo.name, stuinfo.major, stuinfo.term, stuinfo.section, stuinfo.date,
                 averages.`uxui_avg`, averages.`front-end_avg`, averages.`back-end_avg`,
@@ -52,7 +68,63 @@
         $table .="<td>{$row['leadership_avg']}</td>";
         $table .="<td>{$row['date']}</td>";
         $table .="</tr>";
-    }         
+    }
+    
+    //FILTERING
+    $where = [];
+
+    if (!empty($_GET['semester'])) {
+        $in = "'" . implode("','", $_GET['semester']) . "'";
+        $where[] = "stuinfo.term IN ($in)";
+    }
+
+    if (!empty($_GET['section'])) {
+        $in = "'" . implode("','", $_GET['section']) . "'";
+        $where[] = "stuinfo.section IN ($in)";
+    }
+
+    if (!empty($_GET['major'])) {
+        $in = "'" . implode("','", $_GET['major']) . "'";
+        $where[] = "stuinfo.major IN ($in)";
+    }
+
+    if (!empty($_GET['date'])) {
+        $in = "'" . implode("','", $_GET['date']) . "'";
+        $where[] = "stuinfo.date IN ($in)";
+    }
+
+    $filterQ = "";
+    if (!empty($where)) {
+        $filterQ = "WHERE " . implode(" AND ", $where);
+    }
+
+    $sql = "SELECT stuinfo.name, stuinfo.major, stuinfo.term, stuinfo.section, stuinfo.date,
+            averages.`uxui_avg`, averages.`front-end_avg`, averages.`back-end_avg`,
+            averages.`app-dev_avg`, averages.`leadership_avg`
+        FROM stuinfo
+        LEFT JOIN averages USING (email)
+        $filterQ
+        ORDER BY stuinfo.term DESC";
+    $result = $conn->query($sql);
+    $filterData = [];
+    while ($row = $result->fetch_assoc()) {
+        $filterData[] = $row;
+    }
+    $table = "";
+    foreach ($filterData as $row) {
+        $table .= "<tr>";
+        $table .="<td>{$row['term']}</td>";
+        $table .="<td>{$row['section']}</td>";
+        $table .="<td>{$row['name']}</td>";
+        $table .="<td>{$row['major']}</td>";
+        $table .="<td>{$row['uxui_avg']}</td>";
+        $table .="<td>{$row['front-end_avg']}</td>";
+        $table .="<td>{$row['back-end_avg']}</td>";
+        $table .="<td>{$row['app-dev_avg']}</td>";
+        $table .="<td>{$row['leadership_avg']}</td>";
+        $table .="<td>{$row['date']}</td>";
+        $table .="</tr>";
+    }
 ?>
 
 <html>
@@ -65,21 +137,33 @@
             <h2 style="font-size:48px">Results</h2>
             <div class="resultWrapper">
                 <div class="sortBar">
-                    <form method="POST" action="filter.php">
+                    <form method="GET">
                         <h2 style="font-size:20px">FILTER BY</h2>
                         <h3>Semester</h3>
                         <?php
                             foreach ($semesters as $semester) {
-                                echo "<label><input type='checkbox' name='semester' value='$semester'> $semester</label><br>";
+                                echo "<label><input type='checkbox' name='semester[]' value='$semester'> $semester</label><br>";
+                            }
+                        ?>
+                        <h3>Section</h3>
+                        <?php
+                            foreach ($sections as $section) {
+                                echo "<label><input type='checkbox' name='section[]' value='$section'> $section</label><br>";
                             }
                         ?>
                         <h3>Major</h3>
                         <?php
                             foreach ($majors as $major) {
-                                echo "<label><input type='checkbox' name='major' value='$major'> $major</label><br>";
+                                echo "<label><input type='checkbox' name='major[]' value='$major'> $major</label><br>";
                             }
                         ?>
-                        <button type="submit">Apply Filters</button>
+                        <h3>Dates</h3>
+                        <?php
+                            foreach ($dates as $date) {
+                                echo "<label><input type='checkbox' name='date[]' value='$date'> $date</label><br>";
+                            }
+                        ?>
+                        <br><button type="submit">Apply Filters</button>
                     </form>
                 </div>
                 <div id="table">
