@@ -70,15 +70,16 @@
                         <h3>Semester</h3>
                         <?php
                             foreach ($semesters as $semester) {
-                                echo "<label><input type='radio' name='semester' value='$semester' onchange='this.form.submit()'> $semester</label><br>";
+                                echo "<label><input type='checkbox' name='semester' value='$semester'> $semester</label><br>";
                             }
                         ?>
                         <h3>Major</h3>
                         <?php
                             foreach ($majors as $major) {
-                                echo "<label><input type='radio' name='major' value='$major' onchange='this.form.submit()> $major</label><br>";
+                                echo "<label><input type='checkbox' name='major' value='$major'> $major</label><br>";
                             }
                         ?>
+                        <button type="submit">Apply Filters</button>
                     </form>
                 </div>
                 <div id="table">
