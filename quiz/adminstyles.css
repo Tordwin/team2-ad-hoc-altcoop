@@ -20,9 +20,26 @@ span{
     padding: 1em;
 }
 
-th{
-    padding: .5em;
-    text-align: center;
+#table table {
+    width: 100%;
+    border-collapse: collapse;  
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#table th {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 2px solid black;
+}
+
+#table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid black;
+}
+
+#table tr:last-child td {
+    border-bottom: none;
 }
 
 td input{
@@ -34,11 +51,3 @@ td input{
     display:flex;
     gap: 20px;
 }
-
-/* #sortBar input[type="radio"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-} */

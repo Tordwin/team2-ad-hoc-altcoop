@@ -69,7 +69,7 @@
         $table .="<td>{$row['date']}</td>";
         $table .="</tr>";
     }
-    
+
     //FILTERING
     $where = [];
 
@@ -123,6 +123,7 @@
         $table .="<td>{$row['app-dev_avg']}</td>";
         $table .="<td>{$row['leadership_avg']}</td>";
         $table .="<td>{$row['date']}</td>";
+        $table .= "<td><div class='dropdown'><button class='toggleInfo'>+</button></div></td>";
         $table .="</tr>";
     }
 ?>
@@ -131,6 +132,20 @@
     <head>
         <title>Admin Page</title>
         <link rel="stylesheet" href="adminstyles.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const buttons = document.querySelectorAll(".toggleInfo");
+
+                buttons.forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        const moreInfo = document.getElementById("moreInfo");
+                        if (!moreInfo) return;
+
+                        moreInfo.style.display = (moreInfo.style.display === "none" || moreInfo.style.display === "") ? "block" : "none";
+                    });
+                });
+            });
+        </script>
     </head>
     <body>
         <section class="adminContainer">
@@ -160,7 +175,7 @@
                         <h3>Dates</h3>
                         <?php
                             foreach ($dates as $date) {
-                                echo "<label><input type='checkbox' name='date[]' value='$date'> $date</label><br>";
+                                echo "<label><input type='checkbox' name='date[]' value='$date' style=`font-size: 12px`> $date</label><br>";
                             }
                         ?>
                         <br><button type="submit">Apply Filters</button>
@@ -179,11 +194,44 @@
                             <th>APP-DEV</th>
                             <th>LEADERSHIP</th>
                             <th>DATE-ADDED</th>
+                            <th>Action</th>
                         </tr>
                         <?php
                             echo $table;        
                         ?>
                     </table>
+                    <div id="moreInfo" style="display:none;">
+                        <h3 style="font-weight: normal;">Semester</h3>
+                        <h2>Firstname Lastname | Section Number</h2>
+                        <h3 style="font-weight: normal;">Major</h3>
+                        <h2>Roles</h2>
+                        <table>
+                            <tr>
+                                <th>UX/UI</th>
+                                <th>Front-End</th>
+                                <th>Back-End</th>
+                                <th>App-Development</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div style="flex: 1;" id="splitInfo">
+                            <div>
+                                <table>
+                                    <tr>
+                                        <th>Apps</th>
+                                        <th>Languages</th>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div>
+                                <h3>Additional Information</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
