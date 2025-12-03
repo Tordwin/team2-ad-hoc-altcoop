@@ -18,7 +18,7 @@
     $date = $_POST['date'];
 
     // CHECKING POST ENTRIES
-    var_dump($_POST);
+    // var_dump($_POST);
 
     // MAJOR
     $sql = "INSERT INTO stuinfo (`name`, `email`, `major`, `term`, `section`, `date`) 
